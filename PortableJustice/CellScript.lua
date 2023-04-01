@@ -1,4 +1,5 @@
 
+
 -----------------
 local Target = script:FindFirstChild("Target")
 
@@ -61,34 +62,5 @@ local Services = {
 	Debris = (game:FindService("Debris") or game:GetService("Debris")),
 }
 
-
-if Services.Players:GetPlayerFromCharacter(Target) then
-	local Disable = script:WaitForChild("DisableBackpack")
-	Disable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
-	Disable.Disabled = false
-	Services.Debris:AddItem(Disable,1)
-	Services.Players:GetPlayerFromCharacter(Target).CharacterRemoving:Connect(function(Char)--keeps people from a hidden inventory
-		local Enable = script:WaitForChild("EnableBackpack")
-		Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
-		Enable.Disabled = false
-		Services.Debris:AddItem(Enable,1)
-	end)
-end
-
 wait(7.5)
 Stop = false
-if Services.Players:GetPlayerFromCharacter(Target) then	
-	local Enable = script:WaitForChild("EnableBackpack")
-	Enable.Parent = Services.Players:GetPlayerFromCharacter(Target):WaitForChild("Backpack")
-	Enable.Disabled = false
-	Services.Debris:AddItem(Enable,1)
-end
-
-Humanoid.JumpPower = 50
-Humanoid.WalkSpeed = 16
-if Prison_Part then
-	Prison_Part:Destroy()
-end
-wait(2)
-
-script:Destroy()
