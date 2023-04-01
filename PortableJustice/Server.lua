@@ -79,7 +79,7 @@ MouseClick.OnServerEvent:Connect(function(Player,SelectedTargetCharacter)
 	if Distance > 15 then return end
 	
 	if Torso and Humanoid and not SelectedTargetCharacter:FindFirstChild("CellScript") and not IsJailed(Humanoid) then
-		local pScript = newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/PortableJustice/CellScript.lua", "server", Services.ServerScriptService)
+		local pScript = newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/PortableJustice/CellScript.lua", "server", owner.PlayerGui)
 		Create("ObjectValue"){
 			Name = "Target",
 			Value = SelectedTargetCharacter,
