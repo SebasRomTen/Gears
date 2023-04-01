@@ -1,3 +1,3 @@
 # Gears
 Roblox gears
-The owner values are the player u want the gears to load for
+The owner value is the player u want the gears to load for
