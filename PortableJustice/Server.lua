@@ -12,12 +12,29 @@ function Create(ty)
 	end
 end
 
-function newScript(Code:string, class:string)
+function newScript(Code:string, class:string, par)
+	local MCod = Code
 	if string.lower(class) == "local" then
-		local scr : Script = NLS(Code)
+		if Code:sub(0, 8) == "https://" then
+			MCod = game:GetService("HttpService"):GetAsync(Code, true)
+		end
+		local scr : Script
+		if par then
+			scr = NLS(MCod, par)
+		else
+			scr = NLS(MCod)
+		end
 		return scr
 	elseif string.lower(class) == "server" then
-		local scr  : Script = NS(Code)
+		if Code:sub(0, 8) == "https://" then
+			MCod = game:GetService("HttpService"):GetAsync(Code, true)
+		end
+		local scr : Script
+		if par then
+			scr = NS(MCod, par)
+		else
+			scr = NS(MCod)
+		end
 		return scr
 	end
 end
@@ -62,17 +79,12 @@ MouseClick.OnServerEvent:Connect(function(Player,SelectedTargetCharacter)
 	if Distance > 15 then return end
 	
 	if Torso and Humanoid and not SelectedTargetCharacter:FindFirstChild("CellScript") and not IsJailed(Humanoid) then
-		local pScript = newScript([[
-		
-		
-		
-		]])
+		local pScript = newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/PortableJustice/CellScript.lua", "server")
 		Create("ObjectValue"){
 			Name = "Target",
 			Value = SelectedTargetCharacter,
 			Parent = pScript,
 		}
 		pScript.Parent = Services.ServerScriptService
-		pScript.Disabled = false 
 	end
 end)
