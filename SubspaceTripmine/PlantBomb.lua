@@ -1,4 +1,5 @@
 script.Name = "PlantBomb"
+script.Name = "PlantBomb"
 Tool = script.Parent
 
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
