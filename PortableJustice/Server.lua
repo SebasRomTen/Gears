@@ -1,3 +1,5 @@
+script.Name = "Server"
+
 function Create(ty)
 	return function(data)
 		local obj = Instance.new(ty)
