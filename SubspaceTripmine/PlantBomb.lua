@@ -1,6 +1,6 @@
 bombScript = script.Parent.SubspaceMine
 Tool = script.Parent
-
+script.Name = "PlantBomb"
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
 
 function plant(pos)
