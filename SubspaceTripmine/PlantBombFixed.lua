@@ -31,14 +31,14 @@ function plant(pos)
 end
 
 
-Tool.Enabled = true
+--Tool.Enabled = true
 function onActivated()
 
-	if not Tool.Enabled then
-		return
-	end
+	--if not Tool.Enabled then
+	--	return
+--	end
 
-	Tool.Enabled = false
+	--Tool.Enabled = false
 
 	local character = Tool.Parent;
 	local humanoid = character.Humanoid
@@ -54,7 +54,7 @@ function onActivated()
 	wait(3)
 	Tool.Handle.Transparency = 0
 
-	Tool.Enabled = true
+	--Tool.Enabled = true
 end
 
 
