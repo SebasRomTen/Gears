@@ -1,5 +1,4 @@
 --Fixed by Luckymaxer
---Fixed by SebasRomTen
 
 Tool = script.Parent
 Handle = Tool:WaitForChild("Handle")
@@ -23,7 +22,7 @@ function CheckTableForString(Table, String)
 end
 
 function SpinParts()
-	local myPart
+
 	
 	--local vParts = {Character:FindFirstChild("Torso"), Character:FindFirstChild("Left Arm"), Character:FindFirstChild("Right Arm"), Character:FindFirstChild("Left Leg"), Character:FindFirstChild("Right Leg")}
 	--local startPos = {vParts[1].Position, vParts[2].Position, vParts[3].Position, vParts[4].Position, vParts[5].Position}
@@ -39,18 +38,17 @@ function SpinParts()
 	end
 
 	local clonedParts = {}
-	local newBP
 
 	--just need to add hats to dummy head	
-	local newHats = {}
-	local newHatTransforms = {}
-	local oldHats = {}
-	local charParts = Character:GetChildren()
-	local numHatsSoFar = 1
+	newHats = {}
+	newHatTransforms = {}
+	oldHats = {}
+	charParts = Character:GetChildren()
+	numHatsSoFar = 1
 	for i = 1,#charParts do
 		if charParts[i].className == "Hat" then
-			local myHat = charParts[i]
-			local newHandle = myHat.Handle:Clone()
+			myHat = charParts[i]
+			newHandle = myHat.Handle:Clone()
 			newHandle.Name = "Part"
 			newHandle.Parent = Character
 			newHats[numHatsSoFar] = newHandle
@@ -67,7 +65,7 @@ function SpinParts()
 	end
 
 --	for i = 1,#vParts do
-	local randAng = math.random()*2*math.pi
+	randAng = math.random()*2*math.pi
 	for i = 2,#vParts do
 		myPart = vParts[i]
 		if myPart ~= nil then
@@ -88,7 +86,7 @@ function SpinParts()
 	newBP.position = vParts[1].Position+Vector3.new(0,6,0) -- was 6
 	newBP.maxForce = Vector3.new(0,10000,0)
 
-	local myFace = Character.Head.face
+	myFace = Character.Head.face
 	myFace.Parent = nil
 	--oldFace = Character.Head.face
 	--Character.Head.face.Texture = "http://www.roblox.com/asset/?id=0"
@@ -117,7 +115,7 @@ function SpinParts()
 			--if j > 15 then clonedParts[2].BodyPosition.position = vParts[2].Position
 			--elseif j > 10 then clonedParts[2].BodyPosition.position = vParts[1].Position+Vector3.new(0,2-j/10,0)+4*(2-j/10)*Vector3.new(math.sin(randAng+1), 0, math.cos(randAng+1)) end
 
-		local cloneHead = clonedParts[2]
+		cloneHead = clonedParts[2]
 		for i = 1,#newHats do
 			--newHats[i].CFrame = CFrame.new(cloneHeadPos)*CFrame.Angles(0,0,0)
 			--newHats[i].CFrame = newHatTransforms[i]*cloneHead.CFrame
@@ -133,7 +131,7 @@ function SpinParts()
 			elseif j > 10 then clonedParts[i].BodyPosition.position = vParts[1].Position+(i-1)*Vector3.new(0,2-j/10,0)+i*2*(2-j/10)*Vector3.new(math.sin(randAng+i/2), 0, math.cos(randAng+i/2)) end
 		end
 
-		local angle = 2*j*math.pi/5
+		angle = 2*j*math.pi/5
 		--Tool.GripRight = Vector3.new(math.cos(angle),math.sin(angle),0)
 		--Tool.GripForward = Vector3.new(-math.sin(angle),math.cos(angle),0)
 		Tool.GripRight = Vector3.new(math.cos(angle),0,-math.sin(angle))
@@ -235,7 +233,7 @@ function Activated()
 	
 	Tool.Grip = ToolGrip
 	
-	wait(3)
+	wait(ReloadTime)
 
 	Tool.Enabled = true
 
@@ -243,7 +241,7 @@ end
 
 function Equipped()
 	Character = Tool.Parent
-	local Player = Players:GetPlayerFromCharacter(Character)
+	Player = Players:GetPlayerFromCharacter(Character)
 	Humanoid = Character:FindFirstChild("Humanoid")
 	Head = Character:FindFirstChild("Head")
 	Torso = Character:FindFirstChild("Torso")
