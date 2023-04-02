@@ -1,5 +1,7 @@
 Mine = script.Parent
 
+script.Name = "SubspaceMine"
+
 DunDun = Instance.new("Sound")
 DunDun.SoundId = "http://www.roblox.com/asset/?id=11984254"
 DunDun.Parent = Mine
