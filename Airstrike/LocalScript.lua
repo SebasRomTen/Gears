@@ -1,5 +1,6 @@
 --Rescripted by StarWars
 	--Fixed deprecated by SebasRomTen
+script.Name = "LocalScript"
 	local Player = game.Players.LocalPlayer
 	
 	local COOL_DOWN = 1
