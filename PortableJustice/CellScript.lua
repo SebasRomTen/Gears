@@ -1,4 +1,4 @@
-
+script.Name = "CellScript"
 
 -----------------
 local Target = script:FindFirstChild("Target")
