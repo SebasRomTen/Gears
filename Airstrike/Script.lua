@@ -1,6 +1,6 @@
 local Tool = script.Parent
 	
-	local COOL_DOWN = 0
+	local COOL_DOWN = 1
 	
 	local LastStrike = 0
 	
