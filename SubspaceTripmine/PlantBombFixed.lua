@@ -31,7 +31,7 @@ function plant(pos)
 end
 
 
-Tool.Enabled = true
+Tool.Enabled = true --Fixed
 function onActivated()
 
 if not Tool.Enabled then
