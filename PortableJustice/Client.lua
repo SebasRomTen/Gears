@@ -1,3 +1,4 @@
+script.Name = "Client"
 local function waitForChild(parent, child)
 	while parent:FindFirstChild(child) == nil do 
 		wait()
