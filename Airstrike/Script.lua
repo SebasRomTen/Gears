@@ -1,5 +1,5 @@
 local Tool = script.Parent
-	
+	script.Name = "Script"
 	local COOL_DOWN = 1
 	
 	local LastStrike = 0
