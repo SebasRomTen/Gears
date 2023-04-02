@@ -59,4 +59,3 @@ end
 
 
 script.Parent.Activated:connect(onActivated)
-Footer
