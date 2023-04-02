@@ -7,6 +7,7 @@
 -- Place it at the center of the screen regardless of screen resolution -- DONE -- 
 
 --- PRELOAD ASSETS OYUS -- 
+script.Name = "Game Script"
 
 game:GetService("ContentProvider"):Preload("http://www.roblox.com/asset/?id=58449099") -- Background
 game:GetService("ContentProvider"):Preload("http://www.roblox.com/asset/?id=58344744") -- ??
