@@ -116,11 +116,10 @@ OrnamentBall = Create("Part"){
 local OV = Instance.new("ObjectValue", OrnamentControl)
 OV.Name = "Orb"
 	
-	OrnamentControl = script:WaitForChild("OrnamentControl"):Clone()
-
+	OrnamentControl = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/FestivePeriastronChi/OrnamentControl.lua", "local")
+OV.Parent = OrnamentControl
 	OrnamentControl:WaitForChild("Orb",10).Value = OrnamentBall
 	OrnamentControl.Parent = Character
-	OrnamentControl.Disabled = false
 	
 	OrnamentBall.CFrame = Root.CFrame
 	OrnamentBall.Parent = workspace
