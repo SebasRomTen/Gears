@@ -116,18 +116,18 @@ OrnamentBall = Create("Part"){
 local OV = Instance.new("ObjectValue", OrnamentControl)
 OV.Name = "Orb"
 	
-	OrnamentControl = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/FestivePeriastronChi/OrnamentControl.lua", "local")
-OV.Parent = OrnamentControl
+	OrnamentControl = script:WaitForChild("OrnamentControl"):Clone()
+
 	OrnamentControl:WaitForChild("Orb",10).Value = OrnamentBall
 	OrnamentControl.Parent = Character
+	OrnamentControl.Disabled = false
 	
 	OrnamentBall.CFrame = Root.CFrame
 	OrnamentBall.Parent = workspace
 
 
-local OrnamentCleanup = script:WaitForChild("OrnamentCleanup",5)
+local OrnamentCleanup = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/FestivePeriastronChi/OrnamentCleanup.lua", "server")
 OrnamentCleanup.Parent = OrnamentBall
-OrnamentCleanup.Disabled = false
 
 OrnamentControl.Disabled = false -- Let's go!!!
 
@@ -185,3 +185,6 @@ local OrnamentTouch = OrnamentBall.Touched:Connect(function(hit)
 	
 	wait(Properties.OrnamentDuration)
 	Cleanup()
+	
+	
+	
