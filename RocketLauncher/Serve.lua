@@ -82,7 +82,7 @@ local Rocket = Instance.new('Part') do
 	iconTag.Name = 'icon'
 
 	-- Finally, clone the rocket script and enable it
-	local rocketScriptClone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RocketLauncher/Rocket.lua", "server")
+	local rocketScriptClone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RocketLauncher/Rocket.lua", "server", Rocket)
 	rocketScriptClone.Parent = Rocket
 end
 
