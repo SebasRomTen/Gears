@@ -270,7 +270,7 @@ function Activated()
 					local BestVector, BestPosition, BestDistance = FindOptimalLaunchVector(TargetPoint.CFrame.p)
 					MeteorPiano.CFrame = CFrame.new(BestPosition)
 					PianoPropulsion:Fire()
-					local NewScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Piano-Strike/MeteorPianoScript.lua", "server", MeteorPiano)
+					local NewScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalPianoStrike/MeteorPianoScript.lua", "server", MeteorPiano)
 					NewScript.Name = "MeteorPianoScript"
 				else
 					if NewPianoMusic then
