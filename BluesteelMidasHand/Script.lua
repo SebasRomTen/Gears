@@ -164,7 +164,7 @@ function Equipped()
 	Character = Tool.Parent
 	Player = Players:GetPlayerFromCharacter(Character)
 	Humanoid = Character:FindFirstChild("Humanoid")
-	Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	Torso = Humanoid.Torso
 	RightArm = Character:FindFirstChild("Right Arm")
 	if not Player or not Humanoid or Humanoid.Health == 0 or not Torso or not RightArm then
 		return
