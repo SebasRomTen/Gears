@@ -177,26 +177,12 @@ point_light.Color = Color3.new(0, 0.333333, 1)
 point_light.Parent = handle
 
 local toptrail = Instance.new("Attachment")
-toptrail.CFrame = CFrame.fromMatrix(Vector3.new(0.000001952052116394043, 1.849737429893139e-08, 2.600001811981201), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
-toptrail.Position = Vector3.new(0.000001952052116394043, 1.849737429893139e-08, 2.600001811981201)
 toptrail.Visible = false
-toptrail.WorldAxis = Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08)
-toptrail.WorldCFrame = CFrame.fromMatrix(Vector3.new(-27.409610748291016, 8.166512489318848, -58.41712951660156), Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08), Vector3.new(0, -4.371138828673793e-08, -1), Vector3.new(0.7028734683990479, 0.7113149166107178, -3.109256141442529e-08))
-toptrail.WorldOrientation = Vector3.new(-45.342002868652344, 90, -90)
-toptrail.WorldPosition = Vector3.new(-27.409610748291016, 8.166512489318848, -58.41712951660156)
-toptrail.WorldSecondaryAxis = Vector3.new(0, -4.371138828673793e-08, -1)
 toptrail.Name = "TopTrail"
 toptrail.Parent = handle
 
 local bottom_trail = Instance.new("Attachment")
-bottom_trail.CFrame = CFrame.fromMatrix(Vector3.new(0.0000025257468223571777, 4.506808437554355e-08, -0.699998140335083), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
-bottom_trail.Position = Vector3.new(0.0000025257468223571777, 4.506808437554355e-08, -0.699998140335083)
 bottom_trail.Visible = false
-bottom_trail.WorldAxis = Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08)
-bottom_trail.WorldCFrame = CFrame.fromMatrix(Vector3.new(-29.729093551635742, 5.8191728591918945, -58.41712951660156), Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08), Vector3.new(0, -4.371138828673793e-08, -1), Vector3.new(0.7028734683990479, 0.7113149166107178, -3.109256141442529e-08))
-bottom_trail.WorldOrientation = Vector3.new(-45.342002868652344, 90, -90)
-bottom_trail.WorldPosition = Vector3.new(-29.729093551635742, 5.8191728591918945, -58.41712951660156)
-bottom_trail.WorldSecondaryAxis = Vector3.new(0, -4.371138828673793e-08, -1)
 bottom_trail.Name = "BottomTrail"
 bottom_trail.Parent = handle
 
@@ -286,16 +272,8 @@ slashsound.Parent = handle
 
 local right_grip_attachment = Instance.new("Attachment")
 right_grip_attachment.Axis = Vector3.new(0, 1, 0)
-right_grip_attachment.CFrame = CFrame.fromMatrix(Vector3.new(0, 0, -2.000000238418579), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
-right_grip_attachment.Orientation = Vector3.new(-0, 90, 90)
-right_grip_attachment.Position = Vector3.new(0, 0, -2.000000238418579)
 right_grip_attachment.SecondaryAxis = Vector3.new(0, 0, 1)
 right_grip_attachment.Visible = false
-right_grip_attachment.WorldAxis = Vector3.new(0, -4.371138828673793e-08, -1)
-right_grip_attachment.WorldCFrame = CFrame.fromMatrix(Vector3.new(-30.642831802368164, 4.894464015960693, -58.41712951660156), Vector3.new(0, -4.371138828673793e-08, -1), Vector3.new(0.7028734683990479, 0.7113149166107178, -3.109256141442529e-08), Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08))
-right_grip_attachment.WorldOrientation = Vector3.new(44.657997131347656, 89.99999237060547, -0.0000035209131965530105)
-right_grip_attachment.WorldPosition = Vector3.new(-30.642831802368164, 4.894464015960693, -58.41712951660156)
-right_grip_attachment.WorldSecondaryAxis = Vector3.new(0.7028734683990479, 0.7113149166107178, -3.109256141442529e-08)
 right_grip_attachment.Name = "RightGripAttachment"
 right_grip_attachment.Parent = handle
 
