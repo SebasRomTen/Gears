@@ -54,11 +54,11 @@ playing.AnimationId = "http://www.roblox.com/asset?id=183438463"
 playing.Name = "Playing"
 playing.Parent = orbital_violin_strike
 
-local Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Violin-Strike/Script.lua", "server", orbital_violin_strike)
+local Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalViolinStrike/Script.lua", "server", orbital_violin_strike)
 Script.Name = "Script"
 
-local LocalScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Violin-Strike/LocalScript.lua", "local", orbital_violin_strike)
+local LocalScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalViolinStrike/LocalScript.lua", "local", orbital_violin_strike)
 LocalScript.Name = "LocalScript"
 
-local MouseIcon = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Violin-Strike/MouseIcon.lua", "local", orbital_violin_strike)
+local MouseIcon = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalViolinStrike/MouseIcon.lua", "local", orbital_violin_strike)
 MouseIcon.Name = "MouseIcon"
