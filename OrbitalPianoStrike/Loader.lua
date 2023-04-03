@@ -32,8 +32,8 @@ mesh.TextureId = "http://www.roblox.com/asset/?id=113221332"
 mesh.Scale = Vector3.new(2, 2, 2)
 mesh.Parent = handle
 
-local PianoScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Piano-Strike/PianoScript.lua", "server", orbital_piano_strike)
+local PianoScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalPianoStrike/PianoScript.lua", "server", orbital_piano_strike)
 PianoScript.Name = "PianoScript"
 
-local MouseIcon = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Piano-Strike/MouseIcon.lua", "server", orbital_piano_strike)
+local MouseIcon = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalPianoStrike/MouseIcon.lua", "server", orbital_piano_strike)
 MouseIcon.Name = "MouseIcon"
