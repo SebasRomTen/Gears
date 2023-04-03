@@ -1,22 +1,22 @@
-local scripts = Instance.new("Folder")
-scripts.Name = "Animations"
-scripts.Parent = script
+local animations = Instance.new("Folder")
+animations.Name = "Animations"
+animations.Parent = script
 
 local r6 = Instance.new("Folder")
 r6.Name = "R6"
-r6.Parent = scripts
+r6.Parent = animations
 
-local release = Instance.new("script")
-release.scriptId = "rbxassetid://101070520"
+local release = Instance.new("Animation")
+release.AnimationId = "rbxassetid://101070520"
 release.Name = "Release"
 release.Parent = r6
 
 local r15 = Instance.new("Folder")
 r15.Name = "R15"
-r15.Parent = scripts
+r15.Parent = animations
 
-local release_2 = Instance.new("script")
-release_2.scriptId = "rbxassetid://2648017520"
+local release_2 = Instance.new("Animation")
+release_2.AnimationId = "rbxassetid://2648017520"
 release_2.Name = "Release"
 release_2.Parent = r15
 
