@@ -4,7 +4,7 @@ return {
     "BluesteelMidasHand",
     "Crescendo",
     "Darkheart",
-    "iLLumina",
+    "Illumina",
     "MidasGlove",
     "OrbitalFluteStrike",
     "OrbitalPianoStrike",
