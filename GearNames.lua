@@ -1,0 +1,19 @@
+return {
+    "Airstrike",
+    "Atomizer",
+    "BluesteelMidasHand",
+    "Crescendo",
+    "Darkheart",
+    "iLLumina",
+    "MidasGlove",
+    "OrbitalFluteStrike",
+    "OrbitalPianoStrike",
+    "OrbitalViolinStrike",
+    "PortableGameSystemRPG",
+    "PortableJustice",
+    "RaceTheSunset",
+    "RaigTable",
+    "RainbowPeriastronOmega",
+    "RoMaze",
+    "SubspaceTripmine"
+}
