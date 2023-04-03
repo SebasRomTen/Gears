@@ -4,4 +4,3 @@
 	end]]
     wait(.9)
     script.Parent.Velocity = script:WaitForChild("Direction").Value
-    
