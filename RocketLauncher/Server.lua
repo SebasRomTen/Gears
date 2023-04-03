@@ -11,6 +11,8 @@ swoosh.Volume = 0.699999988079071
 swoosh.Name = "Swoosh"
 swoosh.Parent = script
 
+MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
+
 -----------------
 --| Constants |--
 -----------------
@@ -38,7 +40,6 @@ local ToolHandle = Tool:WaitForChild("Handle")
 
 local MouseLoc = Tool:WaitForChild("MouseLoc",10)
 
-local RocketScript = script:WaitForChild('Rocket')
 local SwooshSound = script:WaitForChild('Swoosh')
 local BoomSound = script:WaitForChild('Boom')
 
@@ -81,9 +82,8 @@ local Rocket = Instance.new('Part') do
 	iconTag.Name = 'icon'
 
 	-- Finally, clone the rocket script and enable it
-	local rocketScriptClone = RocketScript:Clone()
+	local rocketScriptClone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RocketLauncher/Rocket.lua", "server")
 	rocketScriptClone.Parent = Rocket
-	rocketScriptClone.Disabled = false
 end
 
 -----------------
