@@ -57,8 +57,8 @@ flute_play.AnimationId = "rbxassetid://225631595"
 flute_play.Name = "FlutePlay"
 flute_play.Parent = Orbital_Flute_Strike
 
-local Server = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Flute-Strike/Server.lua", "server", Orbital_Flute_Strike)
+local Server = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalFluteStrike/Server.lua", "server", Orbital_Flute_Strike)
 Server.Name = "Server"
 
-local Client = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Orbital-Flute-Strike/Client.lua", "local", Orbital_Flute_Strike)
+local Client = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OrbitalFluteStrike/Client.lua", "local", Orbital_Flute_Strike)
 Client.Name = "Client"
