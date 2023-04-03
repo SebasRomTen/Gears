@@ -534,7 +534,7 @@ Tool.Unequipped:Connect(Unequipped)
 function SummonRainBeam()
 	if not Sparkles.Enabled then return end
 	Sparkles.Enabled = false
-	local RainBeamScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/RainBeam.lua", "server")
+	local RainBeamScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/RainBeem.lua", "server")
 	RainBeamScript.Name = "RainBeam"
 	RainBeamScript:WaitForChild("Creator",5).Value = Player
 	RainBeamScript:WaitForChild("Tool",5).Value = Tool
