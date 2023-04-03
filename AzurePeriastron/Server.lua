@@ -155,8 +155,11 @@ local function LaunchCharacter(Center,Equation,DamageAmount)
 		Character:SetPrimaryPartCFrame(Origin)
 	end
 	if Services.Players:GetPlayerFromCharacter(Center.Parent) then
+        local Dir = Instance.new("Vector3Value")
+Dir.Name = "Direction"
 		local Launch = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AzurePeriastron/Launch.lua", "server", Center)
-		Launch.Parent = Center
+		Dir.Parent = Launch
+        Launch.Parent = Center
 		Launch.Direction.Value = Equation
 		Services.Debris:AddItem(Launch,2)
 		--print("Player")
