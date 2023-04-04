@@ -72,7 +72,7 @@ Equipped = false
 
 local SpecialActive = false
 local SecondarySpecialActive = false
-local SpecialCooldown = 1
+local SpecialCooldown = 0.1
 LungeDamage = 27
 ReloadTime = 1
 
@@ -377,7 +377,7 @@ function RegisterCounter()
 					if InvincibleConnection then InvincibleConnection:Disconnect(); InvincibleConnection = nil end
 					Startup,End = tick(),tick()
 					CounterCoroutine = nil
-					SpecialCooldown = 1
+					SpecialCooldown = 0.1
 					SpecialActive = false
 					--Counter-Attack sequence ends here
 			end)
@@ -483,7 +483,7 @@ end
 
 
 function Equipped(Mouse)
-	SpecialCooldown = 1
+	SpecialCooldown = 0.1
 	Tool.Grip = Grips.Normal
 	Equipped = true
 	Startup = tick()
