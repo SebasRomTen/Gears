@@ -128,7 +128,7 @@ local info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.In
 
 local Charging = true
 
-local Animation = script:WaitForChild("Animations",5):WaitForChild(Humanoid.RigType.Name,10):WaitForChild("Release")
+local Animation = animations:WaitForChild(Humanoid.RigType.Name,10):WaitForChild("Release")
 
 
 
