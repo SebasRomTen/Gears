@@ -293,6 +293,7 @@ function ActivateLightBeam()
 	core.ZOffset = 0.0010000000474974513
 	core.Name = "Core"
 	core.Parent = star_particles
+    core.Enabled = false
 
 	local rays_thick = Instance.new("ParticleEmitter")
 	rays_thick.Lifetime = NumberRange.new(1, 2)
@@ -306,6 +307,7 @@ function ActivateLightBeam()
 	rays_thick.Texture = "rbxassetid://1053548563"
 	rays_thick.Name = "Rays_Thick"
 	rays_thick.Parent = star_particles
+    rays_thick.Enabled = false
 
 	local rays_thin = Instance.new("ParticleEmitter")
 	rays_thin.Lifetime = NumberRange.new(1, 2)
@@ -319,6 +321,7 @@ function ActivateLightBeam()
 	rays_thin.Texture = "rbxassetid://1084961641"
 	rays_thin.Name = "Rays_Thin"
 	rays_thin.Parent = star_particles
+    rays_thin.Enabled = flash_circle
 
 	local twinkle = Instance.new("Sound")
 	twinkle.SoundId = "rbxassetid://245520987"
