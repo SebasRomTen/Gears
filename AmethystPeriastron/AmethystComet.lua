@@ -7,11 +7,11 @@ local Services = {
 	Lighting = (game:FindService("Lighting") or game:GetService("Lighting"))
 }
 
+MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
+
 local CometRef = script:WaitForChild("CometRef",10).Value
 
 local Creator = script:WaitForChild("Creator",5)
-
-local AmethystLocal = script:WaitForChild("AmethystLocal",5)
 
 local OriginalTime = Services.Lighting.ClockTime
 local TimeTween = Services.TweenService:Create(Services.Lighting,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0),{ClockTime = 20})
@@ -29,10 +29,10 @@ function IsInTable(Table,Value)
 end
 
 local function PlantLocalForce(character)
-	local Found = character:FindFirstChild(AmethystLocal.Name)
+	local Found = character:FindFirstChild("AmethystLocal")
 	if not character or Found or not character:FindFirstChild("HumanoidRootPart") then return end
 	if (CometRef.CFrame.p-character:FindFirstChild("HumanoidRootPart").CFrame.p).Magnitude > 700 then if Found and IsInTable(LocalScripts,Found) then Found:Destroy() end return end
-	local Clone = AmethystLocal:Clone()
+	local Clone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/AmethystLocal.lua", "local")
 	LocalScripts[#LocalScripts+1] = Clone
 	Clone.Parent = character
 	Clone.Disabled = false
@@ -74,3 +74,4 @@ TimeTween:Play()
 
 
 script:Destroy()
+
