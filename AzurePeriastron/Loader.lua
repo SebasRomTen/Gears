@@ -11,7 +11,7 @@ Azure_Periastron.GripUp = Vector3.new(0, 0, 1)
 Azure_Periastron.ToolTip = "Parry with this Peri (get it?)"
 Azure_Periastron.TextureId = "rbxassetid://69464495"
 Azure_Periastron.WorldPivot = CFrame.fromMatrix(Vector3.new(-29.237085342407227, 6.317093849182129, -58.41712951660156), Vector3.new(0.7113149166107178, -0.7028734683990479, 3.072357657174507e-08), Vector3.new(0, -4.371138828673793e-08, -1), Vector3.new(0.7028734683990479, 0.7113149166107178, -3.109256141442529e-08))
-Azure_Periastron.Name = "Azure Periastron"
+Azure_Periastron.Name = "AzurePeriastron"
 Azure_Periastron.Parent = owner.Backpack
 
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
