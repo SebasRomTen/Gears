@@ -1,5 +1,3 @@
-MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
-
 function Create(ty)
 	return function(data)
 		local obj = Instance.new(ty)
@@ -37,24 +35,22 @@ comet_ref.Name = "CometRef"
 local creator = Instance.new("ObjectValue")
 creator.Name = "Creator"
 
-local CometRefScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/AmethystComet.lua")
-
-comet_ref.Parent = CometRefScript
-creator.Parent = CometRefScript
-
 local CometRef = comet_ref
 local Creator = creator.Value
 
 creator.Value = Creator
 
 CometRef.Value = Comet
+
+MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
+
+local CometRefScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/AmethystComet.lua")
+comet_ref.Parent = CometRefScript
+creator.Parent = CometRefScript
 CometRefScript.Parent = Services.ServerScriptService
-CometRefScript.Disabled = false
 
 local CometParticles = script:WaitForChild("CometParticles",10):GetChildren()
 local CometSounds = script:WaitForChild("CometSounds",10):GetChildren()
-
-
 
 local Center,Top,Bottom = Create("Attachment"){Parent = Comet}
 
