@@ -35,7 +35,9 @@ function TagHumanoid(humanoid, player)
 end
 
 function UntagHumanoid(humanoid)
+    print("First :GetChildren()")
 	for i, v in pairs(humanoid:GetChildren()) do
+        print"Before First :GetChildren()"
 		if v:IsA("ObjectValue") and v.Name == "creator" then
 			v:Destroy()
 		end
@@ -114,7 +116,9 @@ local TwinkleSound = Sounds.Twinkle:Clone()
 		Star.Transparency = (1-(i/60))
 		Services.RunService.Heartbeat:Wait()
 	end
+    print("Second :GetChildren()")
 	local StarParticles = script:WaitForChild("StarParticles",10):GetChildren()
+    print("Finish Second :GetChildren()")
 	for _,particle in pairs(StarParticles) do
 		if particle:IsA("ParticleEmitter") then
 			local Clone = particle:Clone()
@@ -139,7 +143,7 @@ local TwinkleSound = Sounds.Twinkle:Clone()
 	end)
 	
 	local StarFall = true
-	local ShardContent = script:WaitForChild("ShardContent",10):GetChildren()
+	local ShardContent = script:WaitForChild("ShardContent"):GetChildren()
 	
 	spawn(function()
 		local Shard = Create("Part"){
