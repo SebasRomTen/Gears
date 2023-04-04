@@ -117,7 +117,8 @@ local TwinkleSound = Sounds.Twinkle:Clone()
 		Services.RunService.Heartbeat:Wait()
 	end
     print("Second :GetChildren()")
-	local StarParticles = script:WaitForChild("StarParticles"):GetChildren()
+    print("StarParticles: ", script:WaitForChild("StarParticles", 10))
+	local StarParticles = script:WaitForChild("StarParticles", 10):GetChildren()
     print("Finish Second :GetChildren()")
 	for _,particle in pairs(StarParticles) do
 		if particle:IsA("ParticleEmitter") then
