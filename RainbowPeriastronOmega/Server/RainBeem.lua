@@ -54,6 +54,7 @@ tool.Parent = script
 ----
 
 local Creator = creator
+creator.Value = owner
 print(tool.Value)
 local Tool = tool.Value
 
