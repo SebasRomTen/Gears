@@ -579,7 +579,6 @@ function ShieldPulse()
 	local ShieldScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/ShieldScript.lua", "server")
 	ShieldScript.Name = "ShieldScript"
 	ShieldScript.Parent = Character
-	ShieldScript.Disabled = false
 	
 	repeat
 		Services.RunService.Heartbeat:Wait()
