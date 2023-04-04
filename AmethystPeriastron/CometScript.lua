@@ -44,7 +44,7 @@ CometRef.Value = Comet
 
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
 
-local CometRefScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/AmethystComet.lua")
+local CometRefScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/AmethystComet.lua", "server")
 comet_ref.Parent = CometRefScript
 creator.Parent = CometRefScript
 CometRefScript.Name = "AmethystComet"
