@@ -536,8 +536,8 @@ function SummonRainBeam()
 	Sparkles.Enabled = false
 	local RainBeamScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/RainBeem.lua", "server")
 	RainBeamScript.Name = "RainBeam"
-	RainBeamScript:WaitForChild("Creator",5).Value = owner
-	RainBeamScript:WaitForChild("Tool",5).Value = Tool
+	RainBeamScript.Creator.Value = owner
+	RainBeamScript.Tool.Value = script.Parent
 	RainBeamScript.Parent = Services.ServerScriptService
 	local PeriFormation = RainBeamScript:WaitForChild("PeriFormation",5)
 	for _,name in pairs(PeriastronNamesAlt) do
