@@ -369,6 +369,7 @@ function ActivateLightBeam()
 	twinkle.Parent = StarSummon
 	creator.Parent = StarSummon
 	supernova.Parent = StarSummon
+    star_particles.Parent = StarSummon
 	
 	StarSummon:WaitForChild("Creator",10).Value = Player or owner
 	StarSummon.Parent = Star
