@@ -91,11 +91,13 @@ point_light.Color = Color3.new(0.666667, 0, 0)
 point_light.Parent = handle
 
 local toptrail = Instance.new("Attachment")
+toptrail.CFrame = toptrail.CFrame * CFrame.new(0, 0, 2.5)
 toptrail.Visible = false
 toptrail.Name = "TopTrail"
 toptrail.Parent = handle
 
 local bottom_trail = Instance.new("Attachment")
+bottom_trail.CFrame = bottom_trail.CFrame * CFrame.new(0, 0, -.7)
 bottom_trail.Visible = false
 bottom_trail.Name = "BottomTrail"
 bottom_trail.Parent = handle
