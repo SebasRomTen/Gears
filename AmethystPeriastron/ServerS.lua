@@ -332,11 +332,6 @@ function PurpleComet()
 	summon.Volume = 10
 	summon.Name = "Summon"
 	summon.Parent = comet_sounds
-
-	local CometScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/CometScript.lua", "server")
-	
-	comet_particles.Parent = CometScript
-	comet_sounds.Parent = CometScript
 	
 	local Creator = Create("ObjectValue"){
 		Name = "Creator",
@@ -357,11 +352,14 @@ function PurpleComet()
 		Parent = workspace
 	}
 	Comet:SetNetworkOwner(nil)
-	CometScript.Parent = Comet
+    local CometScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/CometScript.lua", "server", Comet)
+	
+	comet_particles.Parent = CometScript
+	comet_sounds.Parent = CometScript
 	
 	repeat
 		Services.RunService.Heartbeat:Wait()
-		--print(CometScript,CometScript.Parent)
+		print(CometScript,CometScript.Parent)
 	until not CometScript or not CometScript.Parent or not CometScript:IsDescendantOf(workspace)
 
 	
