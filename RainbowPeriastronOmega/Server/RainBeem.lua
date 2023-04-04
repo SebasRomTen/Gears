@@ -16,7 +16,7 @@ r15.Name = "R15"
 r15.Parent = animations
 
 local release_2 = Instance.new("Animation")
-release_2.AnimationId = "rbxassetid://2648017520"3
+release_2.AnimationId = "rbxassetid://2648017520"
 release_2.Name = "Release"
 release_2.Parent = r15
 
