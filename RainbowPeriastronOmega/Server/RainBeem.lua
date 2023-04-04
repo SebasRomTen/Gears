@@ -16,7 +16,7 @@ r15.Name = "R15"
 r15.Parent = animations
 
 local release_2 = Instance.new("Animation")
-release_2.AnimationId = "rbxassetid://2648017520"
+release_2.AnimationId = "rbxassetid://2648017520"3
 release_2.Name = "Release"
 release_2.Parent = r15
 
@@ -128,7 +128,7 @@ local info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.In
 
 local Charging = true
 
-local Animation = animations:WaitForChild(Humanoid.RigType.Name,10):WaitForChild("Release")
+local Animation = animations[Humanoid.RigType.Name]:WaitForChild("Release")
 
 
 
