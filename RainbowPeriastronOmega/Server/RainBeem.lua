@@ -59,7 +59,7 @@ print(tool.Value)
 local Tool = tool.Value
 
 --local PeriFormation = peri_formation:GetChildren()
-
+wait(5)
 if not Creator then script:Destroy() return end
 
 local Humanoid,Root = owner.Character:FindFirstChildOfClass("Humanoid"),owner.Character:WaitForChild("HumanoidRootPart",5)
