@@ -353,7 +353,7 @@ function PurpleComet()
 	}
 	Comet:SetNetworkOwner(nil)
     local CometScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/AmethystPeriastron/CometScript.lua", "server", Comet)
-	
+	CometScript.Parent = Comet
 	comet_particles.Parent = CometScript
 	comet_sounds.Parent = CometScript
 	
