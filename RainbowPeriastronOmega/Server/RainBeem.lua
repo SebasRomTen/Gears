@@ -62,7 +62,7 @@ local Tool = tool.Value
 
 if not Creator then script:Destroy() return end
 
-local Humanoid,Root = Creator.Value.Character:FindFirstChildOfClass("Humanoid"),Creator.Value.Character:WaitForChild("HumanoidRootPart",5)
+local Humanoid,Root = owner.Character:FindFirstChildOfClass("Humanoid"),owner.Character:WaitForChild("HumanoidRootPart",5)
 
 if not Humanoid or not Root then script:Destroy() return end
 
