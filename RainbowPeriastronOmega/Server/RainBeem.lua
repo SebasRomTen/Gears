@@ -53,9 +53,9 @@ tool.Parent = script
 
 ----
 
-local Creator = script:WaitForChild("Creator",5)
-
-local Tool = script:WaitForChild("Tool",5).Value
+local Creator = creator
+print(tool.Value)
+local Tool = tool.Value
 
 local PeriFormation = script:WaitForChild("PeriFormation",5):GetChildren()
 
