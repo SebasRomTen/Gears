@@ -1,4 +1,55 @@
+local animations = Instance.new("Folder")
+animations.Name = "Animations"
+animations.Parent = script
 
+local r6 = Instance.new("Folder")
+r6.Name = "R6"
+r6.Parent = animations
+
+local release = Instance.new("Animation")
+release.AnimationId = "rbxassetid://101070520"
+release.Name = "Release"
+release.Parent = r6
+
+local r15 = Instance.new("Folder")
+r15.Name = "R15"
+r15.Parent = animations
+
+local release_2 = Instance.new("Animation")
+release_2.AnimationId = "rbxassetid://2648017520"
+release_2.Name = "Release"
+release_2.Parent = r15
+
+local charge_sound = Instance.new("Sound")
+charge_sound.SoundId = "rbxassetid://1899274315"
+charge_sound.Volume = 1
+charge_sound.Name = "ChargeSound"
+charge_sound.Parent = script
+
+local fire_sound = Instance.new("Sound")
+fire_sound.SoundId = "rbxassetid://1899276280"
+fire_sound.Volume = 2
+fire_sound.Name = "FireSound"
+fire_sound.Parent = script
+
+local loop_sound = Instance.new("Sound")
+loop_sound.Looped = true
+loop_sound.SoundId = "rbxassetid://1899276849"
+loop_sound.Volume = 2
+loop_sound.Name = "LoopSound"
+loop_sound.Parent = script
+
+local peri_formation = Instance.new("Folder")
+peri_formation.Name = "PeriFormation"
+peri_formation.Parent = script
+
+local creator = Instance.new("ObjectValue")
+creator.Name = "Creator"
+creator.Parent = script
+
+local tool = Instance.new("ObjectValue")
+tool.Name = "Tool"
+tool.Parent = script
 
 ----
 
