@@ -1,4 +1,3 @@
-wait(.5)
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
 
 function Create(ty)
@@ -43,10 +42,10 @@ local CometRefScript = MisL.newScript("https://raw.githubusercontent.com/SebasRo
 comet_ref.Parent = CometRefScript
 creator.Parent = CometRefScript
 
-local CometRef = CometRefScript:WaitForChild("CometRef",10)
-local Creator = script:WaitForChild("Creator",10).Value
+local CometRef = comet_ref
+local Creator = creator.Value
 
-CometRefScript:WaitForChild("Creator",5).Value = Creator
+creator.Value = Creator
 
 CometRef.Value = Comet
 CometRefScript.Parent = Services.ServerScriptService
@@ -116,13 +115,6 @@ spawn(function() -- "Disable" Floating forces
 				if forces:IsA("BodyMover") then
 					forces:Destroy()
 				end
-				--[[if forces:IsA("BodyVelocity") then
-					forces.MaxForce = Vector3.new(0,0,0)
-					--print("Disabling Velocity")
-				elseif forces:IsA("BodyForce") then
-					forces.Force = Vector3.new(0,0,0)
-					--print("Disabling Force")
-				end]]
 			end
 		end
 		wait(1/10)
