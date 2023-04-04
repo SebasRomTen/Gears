@@ -58,7 +58,7 @@ creator.Value = owner
 print(tool.Value)
 local Tool = tool.Value
 
-local PeriFormation = peri_formation:GetChildren()
+--local PeriFormation = peri_formation:GetChildren()
 
 if not Creator then script:Destroy() return end
 
