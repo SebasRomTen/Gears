@@ -34,6 +34,7 @@ comet_ref.Name = "CometRef"
 
 local creator = Instance.new("ObjectValue")
 creator.Name = "Creator"
+creator.Value = owner
 
 local CometRef = comet_ref
 local Creator = creator.Value
