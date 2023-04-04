@@ -358,7 +358,7 @@ function PurpleComet()
 	repeat
 		Services.RunService.Heartbeat:Wait()
 		print(CometScript,CometScript.Parent)
-	until not CometScript.Parent == Comet
+	until CometScript.Parent == Comet
 
 	
 	wait(Properties.SpecialCooldown)
