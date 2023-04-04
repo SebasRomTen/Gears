@@ -276,7 +276,7 @@ function SummonShield()
 	reflect.Volume = 1
 	reflect.Name = "Reflect"
 	
-	local ShieldScript = script:WaitForChild("ShieldScript",10):Clone()
+	local ShieldScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/ChartreusePeriastronGamma/ShieldScript.lua", "server")
 	deploy.Parent = ShieldScript
 	reflect.Parent = ShieldScript
 	ShieldScript.Parent = Character
