@@ -228,8 +228,6 @@ function PurpleComet()
 	
 	if Services.ServerScriptService:FindFirstChild("AmethystComet") then return end
 	
-	--Services.Debris:AddItem(Tag,60)
-	
 	Components.PeriSparkle.Enabled = false
 	
 	local comet_particles = Instance.new("Folder")
