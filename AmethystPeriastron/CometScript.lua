@@ -1,3 +1,4 @@
+wait(.5)
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
 
 function Create(ty)
