@@ -464,8 +464,13 @@ function Equipped(Mouse)
 					local SparkleClone = script:WaitForChild("Sparkle",5):Clone()
 					SparkleClone.Parent = Proj
 				SparkleClone:Play()
+
+				local creatorFF = Instance.new("ObjectValue")
+creatorFF.Name = "Creator"
+
 				local ShardScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/StarShard.lua", "server")
-					ShardScript:WaitForChild("Creator").Value = Player
+				creatorFF.Parent = ShardScript
+				ShardScript:WaitForChild("Creator").Value = Player or owner
 				ShardScript.Parent = Proj
 				ShardScript.Name = "StarShard"
 					--Services.Debris:AddItem(Proj,7)

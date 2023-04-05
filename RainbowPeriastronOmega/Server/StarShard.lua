@@ -1,7 +1,3 @@
-local creator = Instance.new("ObjectValue")
-creator.Name = "Creator"
-creator.Parent = script
-
 local Shard = script.Parent
 
 delay(2,function()
