@@ -531,11 +531,66 @@ Tool.Unequipped:Connect(Unequipped)
 function SummonRainBeam()
 	if not Sparkles.Enabled then return end
 	Sparkles.Enabled = false
+
+	local animations = Instance.new("Folder")
+animations.Name = "Animations"
+
+local r6 = Instance.new("Folder")
+r6.Name = "R6"
+r6.Parent = animations
+
+local release = Instance.new("Animation")
+release.AnimationId = "rbxassetid://101070520"
+release.Name = "Release"
+release.Parent = r6
+
+local r15 = Instance.new("Folder")
+r15.Name = "R15"
+r15.Parent = animations
+
+local release_2 = Instance.new("Animation")
+release_2.AnimationId = "rbxassetid://2648017520"
+release_2.Name = "Release"
+release_2.Parent = r15
+
+local charge_sound = Instance.new("Sound")
+charge_sound.SoundId = "rbxassetid://1899274315"
+charge_sound.Volume = 1
+charge_sound.Name = "ChargeSound"
+
+local fire_sound = Instance.new("Sound")
+fire_sound.SoundId = "rbxassetid://1899276280"
+fire_sound.Volume = 2
+fire_sound.Name = "FireSound"
+
+local loop_sound = Instance.new("Sound")
+loop_sound.Looped = true
+loop_sound.SoundId = "rbxassetid://1899276849"
+loop_sound.Volume = 2
+loop_sound.Name = "LoopSound"
+
+local peri_formation = Instance.new("Folder")
+peri_formation.Name = "PeriFormation"
+
+local creator = Instance.new("ObjectValue")
+creator.Name = "Creator"
+
+local tool = Instance.new("ObjectValue")
+tool.Name = "Tool"
+
 	local RainBeamScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/RainBeem.lua", "server")
 	RainBeamScript.Name = "RainBeam"
 
+	tool.Parent = RainBeamScript
+	creator.Parent = RainBeamScript
+	peri_formation.Parent = RainBeamScript
+	loop_sound.Parent = RainBeamScript
+	fire_sound.Parent = RainBeamScript
+	charge_sound.Parent = RainBeamScript
+	animations.Parent = RainBeamScript
+
 	RainBeamScript:WaitForChild("Owner").Value = owner
-	RainBeamScript:WaitForChild("Tool").Value = script.Parent
+	RainBeamScript:WaitForChild("Tool").Value = Tool
 	RainBeamScript.Parent = Services.ServerScriptService
 	local PeriFormation = RainBeamScript:WaitForChild("PeriFormation",5)
 	for _,name in pairs(PeriastronNamesAlt) do
