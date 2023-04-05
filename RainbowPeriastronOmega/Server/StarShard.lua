@@ -4,7 +4,11 @@ delay(2,function()
 	Shard:Destroy()
 end)
 
-local Creator = script:WaitForChild("Creator",10)
+local LFG = {
+	Value = owner
+}
+
+local Creator = LFG
 
 local CreatorHumanoid = Creator.Value.Character:FindFirstChildOfClass("Humanoid")
 

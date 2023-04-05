@@ -470,7 +470,7 @@ creatorFF.Name = "Creator"
 
 				local ShardScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RainbowPeriastronOmega/Server/StarShard.lua", "server")
 				creatorFF.Parent = ShardScript
-				ShardScript:WaitForChild("Creator").Value = Player or owner
+				creatorFF.Value = Player or owner
 				ShardScript.Parent = Proj
 				ShardScript.Name = "StarShard"
 					--Services.Debris:AddItem(Proj,7)
