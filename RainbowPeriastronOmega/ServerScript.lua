@@ -55,6 +55,7 @@ local Seed = Random.new(tick())
 
 local Tool = script.Parent
 shared.Tool = Tool
+_G.Tool = Tool
 Tool.Enabled = true
 local Handle = Tool:WaitForChild("Handle",10)
 local Region = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RegionModule.lua")

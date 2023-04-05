@@ -57,7 +57,7 @@ tool.Value = shared.Tool
 
 local Creator = creator
 creator.Value = owner
-local Tool = tool.Value
+local Tool = shared.Tool or _G.Tool
 
 --local PeriFormation = peri_formation:GetChildren()
 
