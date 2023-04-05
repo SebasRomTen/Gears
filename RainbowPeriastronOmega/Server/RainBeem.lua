@@ -59,7 +59,7 @@ print(tool.Value)
 local Tool = tool.Value
 
 --local PeriFormation = peri_formation:GetChildren()
-wait(5)
+
 if not Creator then script:Destroy() return end
 
 local Humanoid,Root = owner.Character.Humanoid,owner.Character.HumanoidRootPart
@@ -128,8 +128,9 @@ local info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.In
 
 local Charging = true
 
+print("First WFC")
 local Animation = animations[Humanoid.RigType.Name]:WaitForChild("Release")
-
+print("After First WFC")
 
 
 function IsTeamMate(Player1, Player2)
@@ -158,7 +159,9 @@ local ReleaseAnim = Humanoid:LoadAnimation(Animation)
 		local RainPeri = Periastron:Clone();RainPeri.Name = "RainbowPeriastron";RainPeri.Size = RainPeri.Size/10
 		RainPeri:FindFirstChildOfClass("SpecialMesh").TextureId = Properties.BaseUrl .."157345185"
 		RainPeri.CanCollide = false
+		print("Second WFC")
 		RainPeri.CFrame = CFrame.new(Tool:WaitForChild("Handle",5).CFrame.p)*CFrame.Angles(rad(90),0,0);RainPeri.Parent = workspace
+		print("After Second WFC")
 		RainPeri.Anchored = true
 		
 		local Loc = Root.CFrame.p+Vector3.new(0,55,0)
@@ -232,7 +235,9 @@ local ReleaseAnim = Humanoid:LoadAnimation(Animation)
 			v.Anchored = true
 			v.CFrame = pos*CFrame.new(0,-v.Size.Z/2,v.Size.Z/2)
 		end
+		print("Thirth WFC")
 		local ChargeSound = script:WaitForChild("ChargeSound",5)
+		print("After thirth WFC")
 		ChargeSound.Parent = CenterPiece
 		ChargeSound:Play()
 		local Seed = Random.new(tick())
@@ -377,9 +382,13 @@ local ReleaseAnim = Humanoid:LoadAnimation(Animation)
 				Services.RunService.Stepped:Wait()
 			end
 		end)
+		print("Fourth WFC")
 		local FireSound = script:WaitForChild("FireSound",5)
+		print("After Fourth WFC")
 		FireSound.Parent = CenterPiece
+		print("Fifth WFC")
 		local LoopSound = script:WaitForChild("LoopSound",5)
+		print("After Fifth WFC")
 		LoopSound.Parent = CenterPiece
 		FireSound:Play()
 		LoopSound:Play()

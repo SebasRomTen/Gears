@@ -55,15 +55,19 @@ local Seed = Random.new(tick())
 
 local Tool = script.Parent
 Tool.Enabled = true
-
+print("First WFC")
 local Handle = Tool:WaitForChild("Handle",10)
-
+print("After First WFC")
+print("First WFC")
 local Region = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RegionModule.lua")
 
+print("Second WFC")
 local PointLight = Handle:WaitForChild("PointLight",10)
+print("After Second WFC")
 
+print("Thirth WFC")
 local Sparkles = Handle:FindFirstChildOfClass("Sparkles")
-
+print("After Thirth WFC")
 local Animations = Tool:WaitForChild("Animations",10)
 
 local Deletables = {} --Send all deletables here
