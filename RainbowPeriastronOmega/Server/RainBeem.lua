@@ -77,8 +77,12 @@ local Charging = true
 animations = script:WaitForChild("Animations")
 print(animations.R6, animation.R6.Release)
 
+print(Humanoid.RigType.Name)
+
+local RigTT = Humanoid.RigType.Name
+
 print("First WFC")
-local Animation = animations[Humanoid.RigType.Name]:WaitForChild("Release")
+local Animation = animations[tostring(RigTT)]:WaitForChild("Release")
 print("After First WFC")
 
 
