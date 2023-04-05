@@ -4,7 +4,7 @@ local Creator = script:WaitForChild("Creator").Value
 
 local Tool = script:WaitForChild("Tool").Value
 
---local PeriFormation = peri_formation:GetChildren()
+local PeriFormation = script:WaitForChild("PeriFormation"):GetChildren()
 
 if not Creator then script:Destroy() return end
 
