@@ -7,7 +7,7 @@ local Tool = script:WaitForChild("Tool").Value
 local PeriFormation = script:WaitForChild("PeriFormation"):GetChildren()
 
 if not Creator then script:Destroy() return end
-
+print("First sus")
 local Humanoid,Root = owner.Character.Humanoid,owner.Character.HumanoidRootPart
 
 if not Humanoid or not Root then script:Destroy() return end
