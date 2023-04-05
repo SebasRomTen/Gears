@@ -1,6 +1,6 @@
 ----
 print("First Line")
-local Creator = script:WaitForChild("Creator").Value
+local Creator = script:WaitForChild("Creator")
 print("Second Line")
 local Tool = script:WaitForChild("Tool").Value
 print("T Line")
