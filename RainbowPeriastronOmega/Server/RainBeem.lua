@@ -74,8 +74,10 @@ local info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.In
 
 local Charging = true
 
-print("First WFC")
 animations = script:WaitForChild("Animations")
+print(animations.R6, animation.R6.Release)
+
+print("First WFC")
 local Animation = animations[Humanoid.RigType.Name]:WaitForChild("Release")
 print("After First WFC")
 
