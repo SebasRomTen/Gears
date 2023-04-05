@@ -118,7 +118,7 @@ local ReleaseAnim = Humanoid:LoadAnimation(Animation)
 		
 		local Orientation = Loc + (Creator.Value.Character.PrimaryPart.CFrame.lookVector*-2)
 		
-		ocal PartSizeTween = Services.TweenService:Create(RainPeri,info,{Size = RainPeri.Size,CFrame = CFrame.new(Loc,Orientation)})
+		local PartSizeTween = Services.TweenService:Create(RainPeri,info,{Size = RainPeri.Size,CFrame = CFrame.new(Loc,Orientation)})
 		local MeshSizeTween = Services.TweenService:Create(RainPeri:FindFirstChildOfClass("SpecialMesh"),info,{Scale = Vector3.new(1,1,1)*10})
 		MeshSizeTween:Play()
 		PartSizeTween:Play()PartSizeTween.Completed:Wait()
