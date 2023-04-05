@@ -51,6 +51,8 @@ local tool = Instance.new("ObjectValue")
 tool.Name = "Tool"
 tool.Parent = script
 
+tool.Value = shared.Tool
+
 ----
 
 local Creator = creator
