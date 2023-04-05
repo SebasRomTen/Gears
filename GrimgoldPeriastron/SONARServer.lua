@@ -49,7 +49,7 @@ local Humanoid = Character:FindFirstChildOfClass("Humanoid")
 
 local Root = Character:WaitForChild("HumanoidRootPart")
 
-local Region = require(script:WaitForChild("RegionModule",10))
+local Region = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RegionModule.lua")
 
 if not Humanoid or Humanoid.Health <= 0 then script:Destroy() end
 
