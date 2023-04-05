@@ -589,8 +589,8 @@ tool.Name = "Tool"
 	charge_sound.Parent = RainBeamScript
 	animations.Parent = RainBeamScript
 
-	RainBeamScript:WaitForChild("Owner").Value = owner
-	RainBeamScript:WaitForChild("Tool").Value = Tool
+	creator.Value = owner
+	tool.Value = Tool
 	RainBeamScript.Parent = Services.ServerScriptService
 	local PeriFormation = RainBeamScript:WaitForChild("PeriFormation",5)
 	for _,name in pairs(PeriastronNamesAlt) do
