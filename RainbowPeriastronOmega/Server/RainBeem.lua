@@ -1,11 +1,11 @@
 ----
-
+print("First Line")
 local Creator = script:WaitForChild("Creator").Value
-
+print("Second Line")
 local Tool = script:WaitForChild("Tool").Value
-
+print("T Line")
 local PeriFormation = script:WaitForChild("PeriFormation"):GetChildren()
-
+print("Fourth Line")
 if not Creator then script:Destroy() return end
 print("First sus")
 local Humanoid,Root = owner.Character.Humanoid,owner.Character.HumanoidRootPart
