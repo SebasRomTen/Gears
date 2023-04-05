@@ -1,6 +1,7 @@
 ----
 print("First Line")
 local Creator = script:WaitForChild("Creator")
+print(Creator.Value)
 print("Second Line")
 local Tool = script:WaitForChild("Tool").Value
 print("T Line")
@@ -110,11 +111,14 @@ local ReleaseAnim = Humanoid:LoadAnimation(Animation)
 		print("Second WFC")
 		RainPeri.CFrame = CFrame.new(Tool:WaitForChild("Handle",5).CFrame.p)*CFrame.Angles(rad(90),0,0);RainPeri.Parent = workspace
 		print("After Second WFC")
+
 		RainPeri.Anchored = true
 		
 		local Loc = Root.CFrame.p+Vector3.new(0,55,0)
+		
 		local Orientation = Loc + (Creator.Value.Character.PrimaryPart.CFrame.lookVector*-2)
-		local PartSizeTween = Services.TweenService:Create(RainPeri,info,{Size = RainPeri.Size,CFrame = CFrame.new(Loc,Orientation)})
+		
+		ocal PartSizeTween = Services.TweenService:Create(RainPeri,info,{Size = RainPeri.Size,CFrame = CFrame.new(Loc,Orientation)})
 		local MeshSizeTween = Services.TweenService:Create(RainPeri:FindFirstChildOfClass("SpecialMesh"),info,{Scale = Vector3.new(1,1,1)*10})
 		MeshSizeTween:Play()
 		PartSizeTween:Play()PartSizeTween.Completed:Wait()
