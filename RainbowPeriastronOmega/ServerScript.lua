@@ -536,7 +536,7 @@ function SummonRainBeam()
 animations.Name = "Animations"
 
 local r6 = Instance.new("Folder")
-r6.Name = "R6"
+r6.Name = 'R6'
 r6.Parent = animations
 
 local release = Instance.new("Animation")
@@ -545,7 +545,7 @@ release.Name = "Release"
 release.Parent = r6
 
 local r15 = Instance.new("Folder")
-r15.Name = "R15"
+r15.Name = 'R15'
 r15.Parent = animations
 
 local release_2 = Instance.new("Animation")
