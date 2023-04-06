@@ -43,9 +43,11 @@ local function MakeSkeleton()
 		if head then
 			head.Transparency = 0.99
 		end
-
+		
+		print("SkeletonScript before")
 		local skeletonScriptClone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/SkeletonScythe/SkeletonScript.lua", "server")
 		skeletonScriptClone.Parent = Skeleton
+		print("Skeleton script after")
 
 		local creatorTag = Instance.new('ObjectValue')
 		creatorTag.Name = 'creator' --NOTE: Must be called 'creator' for website stats
