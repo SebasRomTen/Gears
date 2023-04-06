@@ -24,7 +24,6 @@ local SpawnSkeletonRemote = Tool:WaitForChild("SpawnSkeleton")
 
 local MyPlayer = nil
 
-local SkeletonScript = script:WaitForChild("SkeletonScript")
 local Fire = script:WaitForChild("Fire")
 
 local GongSound = ToolHandle:WaitForChild("Gong")
