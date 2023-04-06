@@ -2,7 +2,7 @@
 
 --Zombie artificial stupidity script
 --(Modified for skeletons)
-
+print("Skeleton Script")
 sp=script.Parent
 lastattack=0
 nextrandom=0
