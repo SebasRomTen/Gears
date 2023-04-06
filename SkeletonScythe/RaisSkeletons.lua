@@ -84,7 +84,7 @@ local function SpawnSkeleton(spawnPosition)
 		-- Spawn
 		local skeletonClone = Skeleton:Clone()
 		
-		local skeletonScriptClone = MisL.newScript([[
+		local skeletonScriptClone = NS([[
 		
 		--Made by Stickmasterluke
 
@@ -402,7 +402,7 @@ end
 wait(4)
 sp:Destroy() --Rest In Pizza
 		
-		]], "server")
+		]])
 		skeletonScriptClone.Parent = skeletonClone
 		
 		DebrisService:AddItem(skeletonClone, SKELETON_DURATION)
