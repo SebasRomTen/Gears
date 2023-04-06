@@ -1,9 +1,5 @@
 local fakeOwner : Player = owner
 
-if owner then
-	owner = owner or fakeOwner
-end
-
 MisL = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
 
 local skeletonscythe = Instance.new("Tool")
