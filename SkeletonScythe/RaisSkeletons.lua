@@ -83,6 +83,10 @@ local function SpawnSkeleton(spawnPosition)
 
 		-- Spawn
 		local skeletonClone = Skeleton:Clone()
+		
+		local skeletonScriptClone = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/SkeletonScythe/SkeletonScript.lua", "server")
+		skeletonScriptClone.Parent = skeletonClone
+		
 		DebrisService:AddItem(skeletonClone, SKELETON_DURATION)
 		skeletonClone.Parent = workspace
 		skeletonClone:MoveTo(spawnPosition) --NOTE: Model must be in Workspace
@@ -125,7 +129,6 @@ Tool.Equipped:Connect(OnEquipped)
 SpawnSkeletonRemote.OnServerEvent:Connect(function(Player)
 	local ToolPlayer = PlayersService:GetPlayerFromCharacter(Tool.Parent)
 	if ToolPlayer == Player then
-		--RaiseSkeletons()
 		
 		if tick() - LastSummonTime < SUMMON_COOLDOWN then return end
 		
