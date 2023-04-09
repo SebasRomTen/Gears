@@ -65,7 +65,6 @@ local Sword = {
 --
 --
 function Sword:PoisonStep()
-	print("Poison Step")
 	local myPlayer = GLib.GetPlayerFromPart(Tool)
 
 	for humanoid, info in next, Sword.PoisonedCharacters do
@@ -166,7 +165,6 @@ function GetCharacter()
 end
 
 function Sword:StartRain()
-	print("Start Rain")
 	if Sword.RainActive then return end
 	Sword.RainActive = true
 	Handle.AcidRain:Play()
@@ -276,7 +274,6 @@ script.Parent:Destroy()
 						end
 					end
 					for humanoid, info in next, targettingHumanoids do
-                       -- print(humanoid)
 						local hitsound = Handle.AcidHit:Clone()
 						hitsound.Pitch = (1.2-0.7)*math.random() + 0.7
 						hitsound.Parent = humanoid.Torso
@@ -325,7 +322,6 @@ script:Destroy()
 								disableJumpScript.Lifetime.Value = 1.5
 								disableJumpScript.ExtraLifetime.Value = 0.5
 								disableJumpScript.Parent = info.Character
-                                print("Applied anti jump")
 							end
 
 							if humanoid.Health <= 0 then
@@ -353,7 +349,6 @@ script:Destroy()
 									end
 								end
 							end
-                            print("Skeleton stuff")
 						end
 					end
 				else
