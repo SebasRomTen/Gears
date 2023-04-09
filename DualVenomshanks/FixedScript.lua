@@ -297,6 +297,7 @@ print("Starting Puddle")
 							end
 						end
 					end
+                    print("After for index, part in next, parts do")
 
 					for humanoid, info in next, targettingHumanoids do
 						local hitsound = Handle.AcidHit:Clone()
@@ -347,6 +348,7 @@ script:Destroy()
 								disableJumpScript.Lifetime.Value = 1.5
 								disableJumpScript.ExtraLifetime.Value = 0.5
 								disableJumpScript.Parent = info.Character
+                                print("Applied anti jump")
 							end
 
 							if humanoid.Health <= 0 then
@@ -374,6 +376,7 @@ script:Destroy()
 									end
 								end
 							end
+                            print("Skeleton stuff")
 						end
 					end
 				else
