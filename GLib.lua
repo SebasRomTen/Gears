@@ -249,7 +249,6 @@ Lib.SetButtonCooldown = function(name, t)
 	remove(name)
 
 	if t and t > 0 then
-		local GLib = require(script.Parent)
 		local button = CAS:GetButton(name)
 		local info = {
 			StartedAt = tick(),
