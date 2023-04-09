@@ -319,6 +319,7 @@ script:Destroy()
 								
 								]], info.Character)
 								disableJumpScript.Humanoid.Value = humanoid
+                                print(humanoid)
 								disableJumpScript.Lifetime.Value = 1.5
 								disableJumpScript.ExtraLifetime.Value = 0.5
 								disableJumpScript.Parent = info.Character
