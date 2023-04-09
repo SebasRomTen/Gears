@@ -140,7 +140,6 @@ Lib.GetCharacterFromPart = function(part)
 			end
 		end
 		if current:IsA'Player' then
-			local GLib = require(script.Parent)
 			character = current.Character
 			humanoid = character and Lib.GetHumanoid(character)
 			player = current
