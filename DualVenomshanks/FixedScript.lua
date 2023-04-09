@@ -304,7 +304,7 @@ print("Starting Puddle")
 
                     print("TargettingHumanoids : ", targettingHumanoids)
 					for humanoid, info in next, targettingHumanoids do
-                        print(humanoid)
+                       -- print(humanoid)
 						local hitsound = Handle.AcidHit:Clone()
 						hitsound.Pitch = (1.2-0.7)*math.random() + 0.7
 						hitsound.Parent = humanoid.Torso
