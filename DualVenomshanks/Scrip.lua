@@ -161,6 +161,10 @@ function Sword:CureHumanoid(humanoid)
 	end
 end
 
+function GetCharacter()
+	return owner.Character, owner, owner.Character.Humanoid
+end
+
 function Sword:StartRain()
 	print("Start Rain")
 	if Sword.RainActive then return end
@@ -179,7 +183,7 @@ function Sword:StartRain()
 	print("projectiles on")
 	local rainfallSpeed = {Min=300/2, Max=525/2}
 	print("Rainfall speed on")
-	local myCharacter, myPlayer, myHumanoid = GLib.GetCharacter(Tool)
+	local myCharacter, myPlayer, myHumanoid = GetCharacter()
 	print("my char on")
 	local ignoreList = {myCharacter}
 	print("Ignore list on")
