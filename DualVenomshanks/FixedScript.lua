@@ -266,6 +266,7 @@ print("Starting Puddle")
 	end
 	print("After hit")
 
+    print("On FastSpawn")
 	GLib.FastSpawn(function()
 		local startedAt = tick()
 		local delta = 0
@@ -278,7 +279,9 @@ print("Starting Puddle")
 						puddle.Position - puddle.Size/2,
 						puddle.Position + puddle.Size/2
 					)
+                    print("Puddle Region3")
 					local parts = workspace:FindPartsInRegion3WithIgnoreList(region, ignoreList, 100)
+                    print("Ignore list")
 
 					local targettingHumanoids = {}
 					for index, part in next, parts do
