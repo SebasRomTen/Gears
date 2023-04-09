@@ -162,9 +162,9 @@ end
 
 function Sword:StartRain()
 	print("Start Rain")
-	if Sword.RainActive then return end
+	if Sword.RainActive then return end print("Suspicious")
 	Sword.RainActive = true
-
+	print("After Rain")
 	Handle.AcidRain:Play()
 
 	local puddles = {}
