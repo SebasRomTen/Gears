@@ -169,28 +169,13 @@ function Sword:StartRain()
 	print("Start Rain")
 	if Sword.RainActive then return end
 	Sword.RainActive = true
-	print("After Rain")
-	print(Handle)
-	print("printed handle")
-	print(Handle.AcidRain)
-	print("printed acid rain")
 	Handle.AcidRain:Play()
-	print("After Rain 2")
-	print("Start Rain 2")
 	local puddles = {}
-	print("puddles on")
 	local projectiles = {}
-	print("projectiles on")
 	local rainfallSpeed = {Min=300/2, Max=525/2}
-	print("Rainfall speed on")
 	local myCharacter, myPlayer, myHumanoid = GetCharacter()
-	print("my char on")
 	local ignoreList = {myCharacter}
-	print("Ignore list on")
 	local humanoid = owner.Character.Humanoid
-	print("Humanoid on")
-	
-	print(myHumanoid)
 
 	local basePuddle = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonPuddle',
@@ -228,7 +213,6 @@ function Sword:StartRain()
 		local WFV = Instance.new("NumberValue")
 		WFV.Name = "WaitFor"
 		
-		print("Sus before")
 		local RemoVPDS = NS([[
 wait(script:WaitForChild('WaitFor').Value)
 script.Parent:Destroy()
@@ -239,13 +223,11 @@ script.Parent:Destroy()
 
 		puddleModel.RemovePuddles.WaitFor.Value = Config.PuddleLifetime.Value
 		puddleModel.Parent = workspace
-		print("Sus after")
 	end
-print("Starting Puddle")
+
 	local startingPuddle = basePuddle:Clone()
-	print("After puddle")
 	startingPuddle.Size = Vector3.new(Config.PuddleRadius.Value*2, 0.2, Config.PuddleRadius.Value*2)
-	print("After puddle size")
+
 	local hit, pos, norm = workspace:FindPartOnRayWithIgnoreList(
 		Ray.new(
 			myHumanoid.Torso.Position,
@@ -253,7 +235,7 @@ print("Starting Puddle")
 		),
 		ignoreList
 	)
-	print("AFter hit, pos, norm")
+
 	if hit then
 		table.insert(puddles, startingPuddle)
 		table.insert(ignoreList, startingPuddle)
@@ -264,9 +246,7 @@ print("Starting Puddle")
 			pos + norm
 		) * CFrame.Angles(math.pi/2, 0, 0)
 	end
-	print("After hit")
 
-    print("On FastSpawn")
 	GLib.FastSpawn(function()
 		local startedAt = tick()
 		local delta = 0
@@ -279,17 +259,12 @@ print("Starting Puddle")
 						puddle.Position - puddle.Size/2,
 						puddle.Position + puddle.Size/2
 					)
-                    print("Puddle Region3")
 					local parts = workspace:FindPartsInRegion3WithIgnoreList(region, ignoreList, 100)
-                    print("Ignore list")
 
 					local targettingHumanoids = {}
-                    print(parts)
 					for index, part in next, parts do
 						if ((part.Position - puddle.Position)*Vector3.new(1,0,1)).magnitude <= puddle.Size.x/2 then
-                            print("Getting character")
 							local character, player, humanoid = GLib.GetCharacter(part)
-                            print("Got Character")
 							if character and humanoid and not targettingHumanoids[humanoid] then
 								local protected = GLib.IsProtected(humanoid)
 								if not protected then
@@ -300,9 +275,6 @@ print("Starting Puddle")
 							end
 						end
 					end
-                    print("After for index, part in next, parts do")
-
-                    print("TargettingHumanoids : ", targettingHumanoids)
 					for humanoid, info in next, targettingHumanoids do
                        -- print(humanoid)
 						local hitsound = Handle.AcidHit:Clone()
