@@ -177,7 +177,7 @@ function Sword:StartRain()
 	local puddles = {}
 	print("puddles on")
 	local projectiles = {}
-	pairs("projectiles on")
+	print("projectiles on")
 	local rainfallSpeed = {Min=300/2, Max=525/2}
 	print("Rainfall speed on")
 	local myCharacter, myPlayer, myHumanoid = GLib.GetCharacter(Tool)
