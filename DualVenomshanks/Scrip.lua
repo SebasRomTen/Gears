@@ -187,7 +187,7 @@ function Sword:StartRain()
 	print("my char on")
 	local ignoreList = {myCharacter}
 	print("Ignore list on")
-	local humanoid = GLib.GetHumanoid(myCharacter)
+	local humanoid = owner.Character.Humanoid
 	print("Humanoid on")
 
 	local basePuddle = GLib.Create'Part'{
