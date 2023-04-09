@@ -189,6 +189,8 @@ function Sword:StartRain()
 	print("Ignore list on")
 	local humanoid = owner.Character.Humanoid
 	print("Humanoid on")
+	
+	print(myHumanoid)
 
 	local basePuddle = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonPuddle',
@@ -239,7 +241,7 @@ script.Parent:Destroy()
 		puddleModel.Parent = workspace
 		print("Sus after")
 	end
-
+print("Starting Puddle")
 	local startingPuddle = basePuddle:Clone()
 	startingPuddle.Size = Vector3.new(Config.PuddleRadius.Value*2, 0.2, Config.PuddleRadius.Value*2)
 	local hit, pos, norm = workspace:FindPartOnRayWithIgnoreList(
