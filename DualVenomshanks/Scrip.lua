@@ -172,7 +172,6 @@ function Sword:StartRain()
 	print("printed acid rain")
 	Handle.AcidRain:Play()
 	print("After Rain 2")
-	
 	print("Start Rain 2")
 	local puddles = {}
 	print("puddles on")
