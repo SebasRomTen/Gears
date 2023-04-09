@@ -153,6 +153,8 @@ Lib.GetCharacterFromPart = function(part)
 	return character, player or (character and Players:GetPlayerFromCharacter(character)), humanoid
 end
 
+Lib.GetCharacter = Lib.GetCharacterFromPart
+
 Lib.GetPlayerFromPart = function(part)
 	if not part then return nil end
 
