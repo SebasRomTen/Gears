@@ -286,7 +286,9 @@ print("Starting Puddle")
 					local targettingHumanoids = {}
 					for index, part in next, parts do
 						if ((part.Position - puddle.Position)*Vector3.new(1,0,1)).magnitude <= puddle.Size.x/2 then
+                            print("Getting character")
 							local character, player, humanoid = GLib.GetCharacter(part)
+                            print("Got Character")
 							if character and humanoid and not targettingHumanoids[humanoid] then
 								local protected = GLib.IsProtected(humanoid)
 								if not protected then
