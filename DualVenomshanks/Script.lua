@@ -58,7 +58,8 @@ local Sword = {
 		["Right Arm"] = {MeshId = 36780156, TextureId = 36780292, Scale = Vector3.new(1, 1, 1)},
 		["Left Leg"] = {MeshId = 36780079, TextureId = 36780292, Scale = Vector3.new(1, 1, 1)},
 		["Right Leg"] = {MeshId = 36780195, TextureId = 36780292, Scale = Vector3.new(1, 1, 1)}
-	}
+	},
+	RainActive = false
 }
 
 --
@@ -161,8 +162,8 @@ function Sword:CureHumanoid(humanoid)
 end
 
 function Sword:StartRain()
-	print("Start Rain")
 	print(Sword.RainActive)
+	print("Start Rain")
 	if Sword.RainActive then return end print("Suspicious")
 	Sword.RainActive = true
 	print("After Rain")
