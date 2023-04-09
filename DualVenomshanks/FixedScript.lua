@@ -294,35 +294,6 @@ script.Parent:Destroy()
 
 								local humanoid = Instance.new("ObjectValue")
 								humanoid.Name = "Humanoid"
-
-								local disableJumpScript = NLS([[
-								
-								
-	--Copied into the character to disable jumping
-
-
-local humanoid = script:WaitForChild'Humanoid'.Value
-local jumpCon = humanoid.Changed:connect(function(prop)
-	if prop == 'Jump' and humanoid.Jump == true then
-		humanoid.Jump = false
-	end
-end)
-
-wait(script:WaitForChild'Lifetime'.Value)
-
-jumpCon:disconnect()
-
-wait(script.ExtraLifetime.Value)
-
-script:Destroy()
-								
-								
-								]], info.Character)
-								disableJumpScript.Humanoid.Value = humanoid
-                                print(humanoid)
-								disableJumpScript.Lifetime.Value = 1.5
-								disableJumpScript.ExtraLifetime.Value = 0.5
-								disableJumpScript.Parent = info.Character
 							end
 
 							if humanoid.Health <= 0 then
