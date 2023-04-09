@@ -64,6 +64,7 @@ local Sword = {
 --
 --
 function Sword:PoisonStep()
+	print("Poison Step")
 	local myPlayer = GLib.GetPlayerFromPart(Tool)
 
 	for humanoid, info in next, Sword.PoisonedCharacters do
@@ -160,6 +161,7 @@ function Sword:CureHumanoid(humanoid)
 end
 
 function Sword:StartRain()
+	print("Start Rain")
 	if Sword.RainActive then return end
 	Sword.RainActive = true
 
@@ -207,9 +209,10 @@ function Sword:StartRain()
 	} do
 		local WFV = Instance.new("NumberValue")
 		WFV.Name = "WaitFor"
-
+		
+		print("Sus before")
 		local RemoVPDS = NS([[
-wait(script:WaitForChild('WaitFor', 5).Value)
+wait(script:WaitForChild('WaitFor').Value)
 script.Parent:Destroy()
 
 ]], puddleModel)
@@ -218,6 +221,7 @@ script.Parent:Destroy()
 
 		puddleModel.RemovePuddles.WaitFor.Value = Config.PuddleLifetime.Value
 		puddleModel.Parent = workspace
+		print("Sus after")
 	end
 
 	local startingPuddle = basePuddle:Clone()
