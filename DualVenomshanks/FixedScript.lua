@@ -284,6 +284,7 @@ print("Starting Puddle")
                     print("Ignore list")
 
 					local targettingHumanoids = {}
+                    print(parts)
 					for index, part in next, parts do
 						if ((part.Position - puddle.Position)*Vector3.new(1,0,1)).magnitude <= puddle.Size.x/2 then
                             print("Getting character")
