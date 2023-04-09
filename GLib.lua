@@ -21,6 +21,8 @@ local Debris = game:GetService'Debris'
 
 local Lib = {}
 
+Lib.Script = script
+
 Lib.GetDescendants = function(object)
 	local list = {}
 
