@@ -166,6 +166,10 @@ function Sword:StartRain()
 	if Sword.RainActive then return end
 	Sword.RainActive = true
 	print("After Rain")
+	print(Handle)
+	print("printed handle")
+	print(Handle.AcidRain)
+	print("printed acid rain")
 	Handle.AcidRain:Play()
 	print("After Rain 2")
 	
