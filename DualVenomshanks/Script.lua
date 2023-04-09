@@ -162,19 +162,26 @@ function Sword:CureHumanoid(humanoid)
 end
 
 function Sword:StartRain()
-	print(Sword.RainActive)
 	print("Start Rain")
-	if Sword.RainActive then return end print("Suspicious")
+	if Sword.RainActive then return end
 	Sword.RainActive = true
 	print("After Rain")
 	Handle.AcidRain:Play()
-
+	print("After Rain 2")
+	
+	print("Start Rain 2")
 	local puddles = {}
+	print("puddles on")
 	local projectiles = {}
+	pairs("projectiles on")
 	local rainfallSpeed = {Min=300/2, Max=525/2}
+	print("Rainfall speed on")
 	local myCharacter, myPlayer, myHumanoid = GLib.GetCharacter(Tool)
+	print("my char on")
 	local ignoreList = {myCharacter}
+	print("Ignore list on")
 	local humanoid = GLib.GetHumanoid(myCharacter)
+	print("Humanoid on")
 
 	local basePuddle = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonPuddle',
