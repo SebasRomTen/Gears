@@ -243,7 +243,9 @@ script.Parent:Destroy()
 	end
 print("Starting Puddle")
 	local startingPuddle = basePuddle:Clone()
+	print("After puddle")
 	startingPuddle.Size = Vector3.new(Config.PuddleRadius.Value*2, 0.2, Config.PuddleRadius.Value*2)
+	print("After puddle size")
 	local hit, pos, norm = workspace:FindPartOnRayWithIgnoreList(
 		Ray.new(
 			myHumanoid.Torso.Position,
@@ -251,6 +253,7 @@ print("Starting Puddle")
 		),
 		ignoreList
 	)
+	print("AFter hit, pos, norm")
 	if hit then
 		table.insert(puddles, startingPuddle)
 		table.insert(ignoreList, startingPuddle)
@@ -261,6 +264,7 @@ print("Starting Puddle")
 			pos + norm
 		) * CFrame.Angles(math.pi/2, 0, 0)
 	end
+	print("After hit")
 
 	GLib.FastSpawn(function()
 		local startedAt = tick()
