@@ -304,6 +304,7 @@ print("Starting Puddle")
 
                     print("TargettingHumanoids : ", targettingHumanoids)
 					for humanoid, info in next, targettingHumanoids do
+                        print(humanoid)
 						local hitsound = Handle.AcidHit:Clone()
 						hitsound.Pitch = (1.2-0.7)*math.random() + 0.7
 						hitsound.Parent = humanoid.Torso
@@ -347,7 +348,7 @@ wait(script.ExtraLifetime.Value)
 script:Destroy()
 								
 								
-								]])
+								]], info.Character)
 								disableJumpScript.Humanoid.Value = humanoid
 								disableJumpScript.Lifetime.Value = 1.5
 								disableJumpScript.ExtraLifetime.Value = 0.5
