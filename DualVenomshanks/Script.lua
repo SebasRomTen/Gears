@@ -162,6 +162,7 @@ end
 
 function Sword:StartRain()
 	print("Start Rain")
+	print(Sword.RainActive)
 	if Sword.RainActive then return end print("Suspicious")
 	Sword.RainActive = true
 	print("After Rain")
