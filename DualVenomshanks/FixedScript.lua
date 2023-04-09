@@ -302,6 +302,7 @@ print("Starting Puddle")
 					end
                     print("After for index, part in next, parts do")
 
+                    print("TargettingHumanoids : ", targettingHumanoids)
 					for humanoid, info in next, targettingHumanoids do
 						local hitsound = Handle.AcidHit:Clone()
 						hitsound.Pitch = (1.2-0.7)*math.random() + 0.7
