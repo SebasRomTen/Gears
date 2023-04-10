@@ -177,7 +177,7 @@ function Sword:StartRain()
 
 	local basePuddle = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonPuddle',
-		BrickColor = BrickColor.new'Grime',
+		BrickColor = BrickColor.new'Bright Green',
 		Material = 'Glass',
 		FormFactor = 'Custom',
 		Anchored = true,
@@ -186,12 +186,13 @@ function Sword:StartRain()
 		TopSurface = 'Smooth',
 		BottomSurface = 'Smooth',
 		Transparency = .7,
+		CastShadow = false,
 
 		GLib.Create'CylinderMesh'{}
 	}
 	local baseProjectile = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonProjectile',
-		BrickColor = BrickColor.new'Grime',
+		BrickColor = BrickColor.new'Bright Green',
 		Material = 'Glass',
 		FormFactor = 'Custom',
 		Anchored = true,
