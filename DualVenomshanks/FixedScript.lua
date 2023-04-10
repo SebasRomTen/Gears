@@ -201,6 +201,7 @@ function Sword:StartRain()
 		TopSurface = 'Smooth',
 		BottomSurface = 'Smooth',
 		Transparency = .7,
+		CastShadow = false,
 
 		GLib.Create'SpecialMesh'{
 			MeshType = 'Head'
