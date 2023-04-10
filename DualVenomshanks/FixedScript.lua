@@ -185,7 +185,7 @@ function Sword:StartRain()
 		Locked = true,
 		TopSurface = 'Smooth',
 		BottomSurface = 'Smooth',
-		Transparency = .7,
+		Transparency = .3,
 		CastShadow = false,
 
 		GLib.Create'CylinderMesh'{}
@@ -200,7 +200,7 @@ function Sword:StartRain()
 		Locked = true,
 		TopSurface = 'Smooth',
 		BottomSurface = 'Smooth',
-		Transparency = .7,
+		Transparency = .3,
 		CastShadow = false,
 
 		GLib.Create'SpecialMesh'{
