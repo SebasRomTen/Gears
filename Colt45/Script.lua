@@ -19,7 +19,7 @@ function WaitForChild(obj, name)
 end
 
 local function FindCharacterAncestor(subject)
-	if subject and subject ~= Workspace then
+	if subject and subject ~= workspace then
 		if subject:FindFirstChild('Humanoid') then
 			return subject
 		else
@@ -84,6 +84,7 @@ function GunObj:Initialize()
 end
 
 function GunObj:UpdateNumbers(data,frame)
+	local ndigit
 	if string.len(data)==0 then
 		data= '0'..data
 	end
@@ -195,7 +196,7 @@ function GunObj:OnEquipped()
 				end
 			end)
 			self:UpdateGui()
-			Spawn(function() self:CursorUpdate() end )
+			spawn(function() self:CursorUpdate() end )
 		end
 end
 
