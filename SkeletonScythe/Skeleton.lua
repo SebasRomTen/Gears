@@ -423,5 +423,7 @@ local SkeletonScript = MisL.newScript([[
 	sp:Destroy() --Rest In Pizza
 	
 ]], "server", SkeletonBody)
+SkeletonScript.Name = "SkeletonScript"
+print("Give class")
 
 return SkeletonBody
