@@ -66,6 +66,7 @@ fireballMesh.Parent = fireball
 fireballMesh.Scale = Vector3.new(2.0, 2.0, 2.0) 
 
 local SkeletonBird = script.Parent
+print("About to can collide")
 SkeletonBird.CanCollide = true
 
 local leftWing = WaitForChild(SkeletonBird, "LeftWing")
