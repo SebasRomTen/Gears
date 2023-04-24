@@ -107,7 +107,7 @@ skull.Parent = SkeletonBody
 
 local SkeletonScript = MisL.newScript([[
 	--Made by Stickmasterluke
-
+print("Skeleton script")
 	--Zombie artificial stupidity script
 	--(Modified for skeletons)
 	print("Skeleton Script")
