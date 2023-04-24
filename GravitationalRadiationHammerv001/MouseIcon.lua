@@ -29,6 +29,6 @@ function OnChanged(Property)
 	end
 end
 
-Tool.Unequipped:Conenct(OnUnequipped)
+Tool.Unequipped:Connect(OnUnequipped)
 Tool.Equipped:connect(OnEquipped)
 Tool.Changed:connect(OnChanged)
