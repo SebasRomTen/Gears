@@ -422,6 +422,6 @@ local SkeletonScript = MisL.newScript([[
 	wait(4)
 	sp:Destroy() --Rest In Pizza
 	
-]])
+]], "server", SkeletonBody)
 
 return SkeletonBody
