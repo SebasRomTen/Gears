@@ -223,7 +223,7 @@ Handle.Transparency = 0
 Tool.Enabled = true
 
 
-function Princessize(character)
+function Princessize(character : Model)
 	local Princessized = Create("StringValue"){
 		Name = "Princessized",
 		Parent = character,
@@ -241,8 +241,8 @@ function Princessize(character)
 			Parent = character
 		}
 	end
-	Hair.Parent = Character
-	Hat.Parent = Character
+	Hair.Parent = character
+	Hat.Parent = character
 end
 
 function CheckIfAlive()
