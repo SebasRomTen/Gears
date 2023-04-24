@@ -105,9 +105,7 @@ skeleton_torso.Parent = SkeletonBody
 
 skull.Parent = SkeletonBody
 
-local SkeletonScript = MisL.newScript([[
-	https://raw.githubusercontent.com/SebasRomTen/Gears/main/SkeletonScythe/SkeletonScript.lua	
-]], "server", SkeletonBody)
+local SkeletonScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/SkeletonScythe/SkeletonScript.lua", "server", SkeletonBody)
 SkeletonScript.Name = "SkeletonScript"
 print("Give class")
 
