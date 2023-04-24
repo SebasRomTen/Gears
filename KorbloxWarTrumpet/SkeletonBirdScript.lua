@@ -66,8 +66,7 @@ fireballMesh.TextureId = "http://www.roblox.com/asset/?id=57809568"
 fireballMesh.Parent = fireball
 fireballMesh.Scale = Vector3.new(2.0, 2.0, 2.0) 
 
-local SkeletonBird = script.Parent
-print("About to can collide")
+local SkeletonBird = script.Parent or script.Parent.Torso or script.Parent:FindFirstChild("Torso")
 SkeletonBird.CanCollide = true
 
 local leftWing = WaitForChild(SkeletonBird, "LeftWing")
