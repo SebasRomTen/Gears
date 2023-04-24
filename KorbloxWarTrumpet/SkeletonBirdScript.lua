@@ -1,3 +1,4 @@
+print("SkeletonBirdScript")
 --SkeletonBird settings are here
 local Aggressive = true --SkeletonBird will attack enemies
 local SmallDamage = 15
