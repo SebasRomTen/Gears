@@ -107,7 +107,7 @@ right_wing_weld.Part1 = right_wing
 right_wing_weld.Name = "RightWingWeld"
 right_wing_weld.Parent = torso
 
-local SkeletonBirdScript : Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/KorbloxWarTrumpet/SkeletonBirdScript.lua", "server", skeleton_bird)
+local SkeletonBirdScript : Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/KorbloxWarTrumpet/SkeletonBirdScript.lua", "server", torso)
 SkeletonBirdScript.Name = "SkeletonBirdScript"
 
 return skeleton_bird
