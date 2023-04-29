@@ -188,7 +188,9 @@ function Sword:StartRain()
 		Transparency = .7,
 		CastShadow = false,
 
-		GLib.Create'CylinderMesh'{}
+		GLib.Create'SpecialMesh'{
+		         MeshType = 'Sphere'
+		}
 	}
 	local baseProjectile = GLib.Create'Part'{
 		Name = 'DualVenomshanks_PoisonProjectile',
