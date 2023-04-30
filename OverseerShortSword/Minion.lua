@@ -5,6 +5,8 @@ Minion.Name = "Overseer Minion"
 
 print(Minion:FindFirstChild("HumanoidRootPart"), Minion:FindFirstChild("HumanoidRootPart"):FindFirstChild("RootJoint"))
 
+MisL.Chars.animate(Minion)
+
 local overseer_left_arm = Instance.new("CharacterMesh")
 overseer_left_arm.BodyPart = Enum.BodyPart.LeftArm
 overseer_left_arm.MeshId = 74653352
@@ -425,3 +427,9 @@ Humanoid.FallingDown:connect(function(state) onState(state, sFallingDown) end)
 ]], "server", Minion)
 Sound.Name = "Sound"
 return Minion
+
+local MisL : "Library" = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
+
+local minion = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OverseerShortSword/Minion.lua")
+minion.Parent = script
+minion:PivotTo(owner.Character:GetPivot())
