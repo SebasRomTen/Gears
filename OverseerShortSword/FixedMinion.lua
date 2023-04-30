@@ -428,9 +428,3 @@ Humanoid.FallingDown:connect(function(state) onState(state, sFallingDown) end)
 ]], "server", Minion)
 Sound.Name = "Sound"
 return Minion
-
-local MisL : "Library" = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/MisL/main/source.lua"))()
-
-local minion = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OverseerShortSword/Minion.lua")
-minion.Parent = script
-minion:PivotTo(owner.Character:GetPivot())
