@@ -5,7 +5,8 @@ Minion.Name = "Overseer Minion"
 
 print(Minion:FindFirstChild("HumanoidRootPart"), Minion:FindFirstChild("HumanoidRootPart"):FindFirstChild("RootJoint"))
 
-MisL.Chars.animate(Minion)
+local animate = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/SebasRomTen/Character-Animator/main/animator.lua"))()
+animate(Minion)
 
 local overseer_left_arm = Instance.new("CharacterMesh")
 overseer_left_arm.BodyPart = Enum.BodyPart.LeftArm
