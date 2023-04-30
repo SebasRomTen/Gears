@@ -153,7 +153,7 @@ handle.CFrame = CFrame.fromMatrix(Vector3.new(37.90003204345703, 1.0999975204467
 handle.Locked = true
 handle.Size = Vector3.new(1.399999737739563, 1.4000003337860107, 1.8000001907348633)
 handle.TopSurface = Enum.SurfaceType.Smooth
-handle.size = Vector3.new(1.399999737739563, 1.4000003337860107, 1.8000001907348633)
+handle.Size = Vector3.new(1.399999737739563, 1.4000003337860107, 1.8000001907348633)
 handle.Name = "Handle"
 handle.Parent = overseer_helmet
 
@@ -184,7 +184,7 @@ handle.CFrame = CFrame.fromMatrix(Vector3.new(-0.30000001192092896, 17.399999618
 handle.Locked = true
 handle.Size = Vector3.new(1, 2, 2)
 handle.TopSurface = Enum.SurfaceType.Smooth
-handle.size = Vector3.new(1, 2, 2)
+handle.Size = Vector3.new(1, 2, 2)
 handle.Name = "Handle"
 handle.Parent = overseer_helmet2
 
