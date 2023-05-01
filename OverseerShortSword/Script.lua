@@ -34,14 +34,6 @@ ClientControl.Parent = Tool
 
 Tool.Enabled = true
 
-ServerControl.OnServerInvoke = (function(player, Mode, Value)
-	if Mode == "Click" and Value then
-		Activated()
-	elseif Mode == "KeyPress" and Value.Key == "q" and Value.Down and SpecialReady then
-		ActivateSpecial()
-	end
-end)
-
 function InvokeClient(Mode, Value)
 	pcall(function()
 		ClientControl:InvokeClient(Player, Mode, Value)
@@ -212,6 +204,14 @@ end
 function Unequipped()
 	InvokeClient("StopAnimations", nil)
 end
+
+ServerControl.OnServerInvoke = (function(player, Mode, Value)
+	if Mode == "Click" and Value then
+		Activated()
+	elseif Mode == "KeyPress" and Value.Key == "q" and Value.Down and SpecialReady then
+		ActivateSpecial()
+	end
+end)
 
 Handle.Touched:connect(Blow)
 
