@@ -250,6 +250,7 @@ local SpellFunctions = {
 					if Hum and Hum.Health ~= 0 and Hum ~= MyHumanoid and not IsInTable(TaggedHumanoids,Hum) and Center and not IsTeamMate(MyPlayer,Services.Players:GetPlayerFromCharacter(Hum.Parent)) then
 					table.insert(TaggedHumanoids,Hum)
 					
+					print("smoke")
 					local smoke = Instance.new("ParticleEmitter")
 					smoke.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(0.666667, 0, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 1, 1))})
 					smoke.Lifetime = NumberRange.new(2, 2)
@@ -261,7 +262,6 @@ local SpellFunctions = {
 					smoke.Speed = NumberRange.new(0.5, 0.5)
 					smoke.SpreadAngle = Vector2.new(720, 720)
 					smoke.Brightness = 1
-					smoke.Lifetime = 2
 					smoke.Orientation = Enum.ParticleOrientation.FacingCamera
 					smoke.Squash = 0
 					smoke.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.1, 0), NumberSequenceKeypoint.new(1, 1)})
