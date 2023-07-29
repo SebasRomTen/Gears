@@ -493,9 +493,9 @@ function ControlAI()
 				end
 				--if FollowDistance > 5 then
 					if Table.GeneralOffset.Value then
-						Table.Humanoid:MoveTo((CFrame.new(FollowTorso.Position) * CFrame.new(Table.Offset.Value)).p)
+						Table.Humanoid:MoveTo((CFrame.new(FollowTorso.Position) * CFrame.new(Table.Offset.Value)).Position)
 					else
-						Table.Humanoid:MoveTo((FollowTorso.CFrame * CFrame.new(Table.Offset.Value)).p)
+						Table.Humanoid:MoveTo((FollowTorso.CFrame * CFrame.new(Table.Offset.Value)).Position)
 					end
 				--end
 			end
