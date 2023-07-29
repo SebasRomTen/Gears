@@ -34,8 +34,8 @@ Create = function(className, defaultParent)
 	end
 end
 
-Limbs = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/ScaleCharacter/Limbs.lua")
-Joints = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/ScaleCharacter/Joints.lua")
+Limbs = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/MakeNPC/ScaleCharacter/Limbs.lua")
+Joints = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/MakeNPC/ScaleCharacter/Joints.lua")
 
 BasePart = Create("Part"){
 	Shape = Enum.PartType.Block,
