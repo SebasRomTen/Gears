@@ -20,7 +20,7 @@ ReloadTime = 30
 
 ToolEquipped = false
 
-NPCModule = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/MakeNPC/Main.lua")
+NPCModule = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/MakeNPC/Main.lua")
 
 ServerControl = Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction")
 ServerControl.Name = "ServerControl"
