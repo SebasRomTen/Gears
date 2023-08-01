@@ -22,11 +22,11 @@ ToolEquipped = false
 
 NPCModule = MisL.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/MultiPurpose/MakeNPC/Main.lua")
 
-ServerControl = (Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction"))
+ServerControl = Tool:FindFirstChild("ServerControl") or Instance.new("RemoteFunction")
 ServerControl.Name = "ServerControl"
 ServerControl.Parent = Tool
 
-ClientControl = (Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction"))
+ClientControl = Tool:FindFirstChild("ClientControl") or Instance.new("RemoteFunction")
 ClientControl.Name = "ClientControl"
 ClientControl.Parent = Tool
 

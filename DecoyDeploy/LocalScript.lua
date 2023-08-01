@@ -7,8 +7,8 @@ Players = game:GetService("Players")
 
 Animations = {}
 
-ServerControl = Tool:WaitForChild("ServerControl")
-ClientControl = Tool:WaitForChild("ClientControl")
+ServerControl = Tool:WaitForChild("ServerControl", 15)
+ClientControl = Tool:WaitForChild("ClientControl", 15)
 
 ToolEquipped = false
 
