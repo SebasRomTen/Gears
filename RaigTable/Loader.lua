@@ -36,8 +36,8 @@ sound.SoundId = "http://www.roblox.com/asset/?id=111896685"
 sound.Volume = 1
 sound.Parent = handle
 
-local Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Raig-Table/Script.lua", "server", Raig_Table)
+local Script = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RaigTable/Script.lua", "server", Raig_Table)
 Script.Name = "Script"
 
-local AnimationPlayerScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Raig-Table/AnimationPlayerScript.lua", "local", Raig_Table)
+local AnimationPlayerScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RaigTable/AnimationPlayerScript.lua", "local", Raig_Table)
 AnimationPlayerScript.Name = "AnimationPlayerScript"
