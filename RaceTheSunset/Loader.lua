@@ -448,5 +448,5 @@ mountians_3.ZIndex = 2
 mountians_3.Name = "Mountians"
 mountians_3.Parent = mountians3
 
-local LocalScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/Race-the-Sunset/LocalScript.lua", "local", Race_the_Sunset)
+local LocalScript = MisL.newScript("https://raw.githubusercontent.com/SebasRomTen/Gears/main/RaceTheSunset/LocalScript.lua", "local", Race_the_Sunset)
 LocalScript.Name = "LocalScript"
