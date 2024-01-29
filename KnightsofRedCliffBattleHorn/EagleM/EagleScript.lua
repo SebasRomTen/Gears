@@ -69,7 +69,7 @@ function FindTarget()
 		end
 	end
 	if closestPart then 
-		local EnemyTarget = closestPart.Parent
+		EnemyTarget = closestPart.Parent
 		--print("found attack target")
 		return EnemyTarget
 	end
