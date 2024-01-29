@@ -97,7 +97,7 @@ function onEquipped()
 		return
 	end
 
-	myTorso = myCharacter:FindFirstChild("Torso")
+	myTorso = myCharacter:FindFirstChild("Torso") or myCharacter:FindFirstChild("HumanoidRootPart")
 end
 
 Tool.Activated:connect(onActivated)
