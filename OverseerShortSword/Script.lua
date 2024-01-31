@@ -105,12 +105,10 @@ function ActivateSpecial()
 		InvokeClient("PlayAnimation", {Animation = TauntAnim, Speed = 0.8})
 		wait(5)
 		for i = 1, 5 do
-			local OverseerMinionModel = MisL.Http.returnData("https://raw.githubusercontent.com/SebasRomTen/Gears/main/OverseerShortSword/FixedMinion.lua")
-			local OverseerMinion = OverseerMinionModel
+			local OverseerMinion = MisL.Http.returnData("https://glot.io/snippets/gsykuujedc/raw/main.lua")
 			local minionTag = Instance.new('ObjectValue', OverseerMinion.Humanoid)
 			minionTag.Name = 'IsOverseerMinion'
 			minionTag.Value = Player
-			OverseerMinionModel:Destroy()
 			OverseerMinion.Creator.Value = Player
 			OverseerMinion:FindFirstChild("Humanoid").Died:connect(function()
 				wait(1)
